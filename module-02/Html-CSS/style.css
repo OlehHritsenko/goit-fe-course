@@ -1,0 +1,122 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Sample";
+    color: #626262;
+    font-size: 14;
+}
+
+ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+li {
+    font-size: 17px;
+    color: #626262;
+}
+
+.container {
+    width: 901px;
+    margin: 0 auto;
+}
+
+.site-navigation {
+    width: 901px;
+    margin-left: 0;
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin-top: 75px;
+    text-align: center;
+}
+    
+.site-navigation li:not(:last-child) {
+    margin-right: 100px;
+}
+
+.title {
+    margin-bottom: 100px;
+}
+.site-navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #03a9f4
+}
+
+.element {
+    display: inline-block;
+    width: 420px;
+    margin-right: 57px;
+    margin-bottom: 134px;
+}
+
+.element:nth-child(2n) {
+    margin-right: 0px;
+}
+
+.element:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+}
+
+.image {
+    width: 100%;
+    margin-top: 0;
+}
+
+.tigl {
+    font-size: 14px;
+    font-family: "Ubuntu";
+    font-weight: lighter;
+    color: #b4ad9e;
+    text-transform: uppercase; 
+}
+
+.name {
+    font-size: 30px;
+    font-family: "Playfair Display", light;
+    color: #626262;
+}
+
+.aboute {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Playfair Display", regular, optical;
+    color: #626262;
+    margin-bottom: 0;     
+}
+
+.info {
+    margin-bottom: 54px;
+}
+
+.navi {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "Playfair Display", Regular, Metrics;
+    color: #626262;
+    padding: 18px 30px;
+    margin-left: 370px;
+    margin-right: 370px;
+    width: 162px;
+    cursor: pointer;
+}
+
+.navi:hover,
+.navi:fokus {
+    color: #494848;
+}
+ 
