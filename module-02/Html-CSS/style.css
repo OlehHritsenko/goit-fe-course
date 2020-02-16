@@ -36,7 +36,6 @@ li {
 
 .site-navigation li {
     display: inline-block;
-    margin-top: 75px;
     text-align: center;
 }
     
@@ -45,6 +44,7 @@ li {
 }
 
 .title {
+    margin-top: 74px;
     margin-bottom: 100px;
 }
 .site-navigation a {
@@ -80,6 +80,8 @@ li {
 .tigl {
     font-size: 14px;
     font-family: "Ubuntu";
+    text-transform: uppercase;
+    line-height: 1.2;
     font-weight: lighter;
     color: #b4ad9e;
     text-transform: uppercase; 
@@ -87,14 +89,15 @@ li {
 
 .name {
     font-size: 30px;
-    font-family: "Playfair Display", light;
+    font-family: "Playfair Display";
+    line-height: 1.2;
     color: #626262;
 }
 
 .aboute {
     font-size: 14px;
-    line-height: 24px;
-    font-family: "Playfair Display", regular, optical;
+    line-height: 1.714;
+    font-family: "Playfair Display";
     color: #626262;
     margin-bottom: 0;     
 }
@@ -119,4 +122,3 @@ li {
 .navi:fokus {
     color: #494848;
 }
- 
