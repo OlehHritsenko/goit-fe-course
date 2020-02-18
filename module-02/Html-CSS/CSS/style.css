@@ -66,6 +66,7 @@ li {
 
 .element:nth-child(2n) {
     margin-right: 0px;
+    margin-top: 0;
 }
 
 .element:nth-last-child(-n + 2) {
