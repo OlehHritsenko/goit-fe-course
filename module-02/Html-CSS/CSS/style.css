@@ -12,6 +12,7 @@ body {
     font-family: "Sample";
     color: #626262;
     font-size: 14;
+    text-align: center;
 }
 
 ul {
@@ -24,14 +25,13 @@ li {
     color: #626262;
 }
 
-.container {
+.block-info {
     width: 901px;
     margin: 0 auto;
 }
 
 .site-navigation {
-    width: 901px;
-    margin-left: 0;
+    width: 100%;
 }
 
 .site-navigation li {
@@ -47,6 +47,7 @@ li {
     margin-top: 74px;
     margin-bottom: 100px;
 }
+
 .site-navigation a {
     text-transform: uppercase;
     text-decoration: none;
@@ -56,6 +57,10 @@ li {
 .site-navigation a:focus {
     color: #03a9f4
 }
+
+.container {
+    width: 901px;
+}    
 
 .element {
     display: inline-block;
@@ -69,12 +74,12 @@ li {
 }
 
 .element:nth-last-child(-n + 2) {
-    margin-bottom: 0;
+    margin-bottom: 54px;
 }
 
 .image {
     width: 100%;
-    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .tigl {
@@ -84,7 +89,8 @@ li {
     line-height: 1.2;
     font-weight: lighter;
     color: #b4ad9e;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    margin-top: 0;
 }
 
 .name {
@@ -93,6 +99,7 @@ li {
     line-height: 1.2;
     font-weight: lighter;
     color: #626262;
+    margin-top: 0;
 }
 
 .aboute {
@@ -100,11 +107,8 @@ li {
     line-height: 1.714;
     font-family: "Playfair Display";
     color: #626262;
+    margin-top: 0;
     margin-bottom: 0;     
-}
-
-.info {
-    margin-bottom: 54px;
 }
 
 .navi {
@@ -113,13 +117,15 @@ li {
     font-family: "Playfair Display", Regular, Metrics;
     color: #626262;
     padding: 18px 30px;
-    margin-left: 370px;
-    margin-right: 370px;
-    width: 162px;
     cursor: pointer;
 }
 
 .navi:hover,
 .navi:fokus {
     color: #494848;
+}
+
+.container {
+    display: inline-block;
+    margin: 0 auto;
 }
