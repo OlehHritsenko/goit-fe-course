@@ -1,0 +1,276 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", "Arial", sans-serif;
+  color: #6c7279;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.clearfix {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.page-nav {
+  width: 100%;
+  margin-top: 36px;
+  margin-bottom: 90px;
+}
+
+.page-nav::first-letter {
+  color: #1abc9c;
+}
+
+.site-logo {
+  font-size: 30px;
+  font-family: "Roboto";
+  color: #555252;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.067;
+}
+
+.site-logo:hover,
+.site-logo:focus {
+  color: #1abc9c;
+}
+
+.main-menu {
+  float: right;
+  font-size: 14px;  
+  list-style: none;
+  margin: 0;
+  margin-top: 6px;
+  padding: 0;
+  width: 463px;
+}
+
+.main-menu li {
+  float: left;
+}
+
+.main-menu li:not(:last-child) {
+  margin-right: 27px;
+}
+.main-menu a {
+  font-family: "OpenSans";
+  color: #0f0101;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;   
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  color: #1abc9c;
+}
+
+.featured-products {
+    font-size: 48px;
+    font-family: "Roboto";
+    color: #515151;
+    text-transform: uppercase;
+    line-height: 0.667;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.big-line {
+    background-color: #4ec6ab;
+    width: 164px;
+    height: 7px;
+    margin-right:472;
+    margin-left: 472;
+    margin-bottom: 80px;
+} 
+
+.cards {
+  margin: 0;
+  padding: 0;
+}
+
+.cards li {
+  float: left;
+  list-style: none;
+  width: 255px;
+  height: 288px;
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+  margin-bottom: 65px;
+}
+
+.cards li:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.cards li:nth-child(n + 5) {
+  margin-bottom: 100px;
+}
+
+.card-photo {
+  display: block;
+}
+
+.cards li:hover span.name {
+  background-color: #1abc9c
+}
+
+.cards li:hover span.price {
+  background-color: #7fd9c7
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.product {
+  width: 255px;
+  height: 284px;
+  margin: 0;
+  padding: 0;
+}
+
+.block-info {
+  width: 255px;
+  margin-top: 0;
+  padding: 0;
+}
+
+.name {
+  float: left;
+  background-color: #323232;
+  width: 201px;
+  height: 40px;
+  font-size: 18px;
+  font-family: "Roboto";
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.778;
+  padding-top: 4px;
+  padding-left: 14px;
+}
+
+.price {
+  float: left;
+  background-color: #8c8c8c;
+  width: 54px;
+  height: 40px;
+  font-size: 18px;
+  font-family: "Roboto";
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.778;
+  padding-top: 4px;
+  text-align: center;
+}
+
+.latest-news {
+    font-size: 48px;
+    font-family: "Roboto";
+    color: #555252;
+    text-transform: uppercase;
+    line-height: 0.667;
+    margin-top: 0;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.news {
+  margin: 0;
+  padding: 0;
+}
+
+.news li {
+  float: left;
+  list-style: none;
+  width: 350px;
+  margin: 0;
+  padding: 0;
+}
+
+.news li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.load {
+    border-radius: 3px;
+    background-color: #4ec6ab;
+    width: 159px;
+    height: 51px;
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: #ffffff;
+    line-height: 1.625;
+    text-align: center;  
+}
+
+.load:hover,
+.load:focus {
+  color: #2a695c
+}
+
+.head {
+    font-size: 18px;
+    font-family: "OpenSans";
+    color: #555252;
+    line-height: 1.444;
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+  background-color: #4ec6ab;
+  width: 136px;
+  height: 3px;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.body {
+    font-size: 14px;
+    font-family: "OpenSans";
+    color: #555252;
+    line-height: 1.857;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding: 0; 
+}
+
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
