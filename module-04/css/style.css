@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Raleway", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   color: #6c7279;
   font-size: 14px;
   line-height: 21px;
@@ -29,25 +29,11 @@ body {
 .page-nav {
   width: 100%;
   margin-top: 36px;
-  margin-bottom: 90px;
-}
-
-.page-nav::first-letter {
-  color: #1abc9c;
+  margin-bottom: 96px;
 }
 
 .site-logo {
-  font-size: 30px;
-  font-family: "Roboto";
-  color: #555252;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 1.067;
-}
-
-.site-logo:hover,
-.site-logo:focus {
-  color: #1abc9c;
+  display: inline-block;
 }
 
 .main-menu {
@@ -55,7 +41,7 @@ body {
   font-size: 14px;  
   list-style: none;
   margin: 0;
-  margin-top: 6px;
+  margin-top: 4px;
   padding: 0;
   width: 463px;
 }
@@ -81,27 +67,30 @@ body {
 }
 
 .featured-products {
-    font-size: 48px;
-    font-family: "Roboto";
-    color: #515151;
-    text-transform: uppercase;
-    line-height: 0.667;
-    margin-top: 0;
-    margin-bottom: 30px;
-    text-align: center;
+  font-size: 48px;
+  font-family: "Roboto";
+  color: #515151;
+  text-transform: uppercase;
+  line-height: 0.667;
+  margin: 0;
+  text-align: center;
 }
 
-.big-line {
-    background-color: #4ec6ab;
-    width: 164px;
-    height: 7px;
-    margin-right:472;
-    margin-left: 472;
-    margin-bottom: 80px;
-} 
+.featured-products::after,
+.latest-news::after {
+  display: block;
+  content: "";
+  background-color: #4ec6ab;
+  width: 164px;
+  height: 7px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 92px;
+}
 
 .cards {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 100px;
   padding: 0;
 }
 
@@ -109,11 +98,10 @@ body {
   float: left;
   list-style: none;
   width: 255px;
-  height: 288px;
   margin: 0;
   padding: 0;
   margin-right: 30px;
-  margin-bottom: 65px;
+  margin-bottom: 30px;
 }
 
 .cards li:nth-child(4n) {
@@ -121,18 +109,18 @@ body {
 }
 
 .cards li:nth-child(n + 5) {
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 
 .card-photo {
   display: block;
 }
 
-.cards li:hover span.name {
+.cards li:hover .name {
   background-color: #1abc9c
 }
 
-.cards li:hover span.price {
+.cards li:hover .price {
   background-color: #7fd9c7
 }
 
@@ -166,7 +154,10 @@ img {
   text-transform: uppercase;
   line-height: 1.778;
   padding-top: 4px;
+  padding-right: 50px;
+  padding-bottom: 4px;
   padding-left: 14px;
+  margin: 0;
 }
 
 .price {
@@ -179,7 +170,8 @@ img {
   color: #ffffff;
   text-transform: uppercase;
   line-height: 1.778;
-  padding-top: 4px;
+  padding: 4px;
+  margin: 0;
   text-align: center;
 }
 
@@ -189,13 +181,13 @@ img {
     color: #555252;
     text-transform: uppercase;
     line-height: 0.667;
-    margin-top: 0;
-    margin-bottom: 22px;
+    margin: 0;
     text-align: center;
 }
 
 .news {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 80px;
   padding: 0;
 }
 
@@ -237,11 +229,13 @@ img {
     padding: 0;
 }
 
-.line {
+.head::after {
+  display: block;
+  content: "";
   background-color: #4ec6ab;
   width: 136px;
   height: 3px;
-  margin-top: 0;
+  margin-top: 14px;
   margin-bottom: 28px;
 }
 
@@ -251,7 +245,7 @@ img {
     color: #555252;
     line-height: 1.857;
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     padding: 0; 
 }
 
