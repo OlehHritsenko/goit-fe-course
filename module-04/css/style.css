@@ -203,11 +203,16 @@ img {
   margin-right: 30px;
 }
 
+.news-page {
+  margin-bottom: 14px;
+}
+
 .load {
-    border-radius: 3px;
+    border: 0px;
+    padding: 0px;
     background-color: #4ec6ab;
-    width: 159px;
-    height: 51px;
+    width: 160px;
+    height: 50px;
     font-size: 16px;
     font-family: "OpenSans";
     color: #ffffff;
