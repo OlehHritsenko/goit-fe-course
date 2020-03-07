@@ -28,8 +28,8 @@ body {
 
 .page-nav {
   width: 100%;
-  padding-top: 36px;
-  padding-bottom: 96px;
+  margin-top: 36px;
+  margin-bottom: 96px;
 }
 
 .site-logo {
