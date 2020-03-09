@@ -84,24 +84,80 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 600px;
-  width: 100%;
   margin-bottom: 100px;
-  position: relative;
+  background-position-x: initial;
 }
 
 .fon {
-  min-height: 600px;
+  min-height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
 }
 
 .main-tour {
   display: inline-block;
   position: absolute;
+  text-align: center;
 }
+
+.main-tour::before {
+  content: "";
+  width: 104px;
+  height: 104px;
+  background-color: #54a18f;
+  background-image: url(../img/logo/left\ arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+}
+
+.prev {
+  display: block;
+  content: "";
+  width: 104px;
+  height: 104px;
+  position: absolute;
+  left: 0;
+}
+
+.tour a:hover {
+  background-color: #1abc9c;
+  opacity: 0.356;
+}
+
+.main-tour::after {
+  display: block;
+  content: "";
+  clear: both;
+  width: 104px;
+  height: 104px;
+  background-color: #54a18f;
+  background-image: url(../img/logo/right\ arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.next {
+  display: block;
+  content: "";
+  width: 104px;
+  height: 104px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+/* .tour .next:hover {
+  background-color: #1abc9c;
+  opacity: 0.5;
+} */
 
 .tour {
   margin: 0;
@@ -114,19 +170,22 @@ body {
 }
 
 .kinds {
+  display: inline-block;
   margin: 0;
   font-size: 26px;
   font-family: "Roboto";
   color: #ff7200;
   text-transform: uppercase;
   line-height: 1.2;
+  position: absolute;
+  left: 13%;
 }
 
 .banner:hover {
   width: 100%;
   height: 100%;
   background-color: #000002;
-  opacity: 0.522;
+  opacity: 0.897;
 }
 
 .title .banner:hover .tour,
@@ -229,7 +288,7 @@ body {
   background-color: #8c8c8c;  
 }
 
-.card li:hover .name {
+.card>li:hover .name {
   background-color: #1abc9c
 }
 
@@ -237,18 +296,7 @@ body {
   background-color: #7fd9c7
 }
 
-/* .card li:hover .block {
-  width: 235px;
-  height: 261px;
-  top: 10px;
-  left: 10px;
-  position: absolute;
-  background-color: #000000;
-  opacity: 0.549;
-} */
-
 .fon-block {
-  display: block;
   width: 255px;
   height: 282px;
   margin: 0;
@@ -257,29 +305,76 @@ body {
   border-color: #ffffff;
   border-style: solid;
   background-color: #000000;
-  opacity: 0.549;
+  opacity: 0;
   position: absolute;
 }
 
-.mini-block li {
+.card li:hover .fon-block {
+  opacity: 0.649;
+}
+
+.mini-block {
+  width: 235px;
+  height: 262px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.mini-block>li {
   list-style: none;
   width: 50px;
   height: 50px;
   margin: 0;
+  margin-right: 8px;
+  margin-bottom: 8px;
   padding: 0;
   border: 1px solid #ffffff;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo.long {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mini-block>li:nth-child(n + 3) {
+  margin-right: 0;
 }
 
 .mini-block li:last-child {
   width: 166px;
   height: 50px;
+  margin: 0;
+}
+
+.mini-block a {
+  width: 100%;
+  height: 100%;
+}
+
+.mini-block a:hover,
+.mini-block a:focus {
+  background-color: #1abc9c;
+}
+
+.mini-block .logo.long:hover,
+.mini-block .logo.long:focus {
+  background-color: #323232;
 }
 
 .page-footer {
   height: 90px;
   background-color: #323232;
-  /* background-size: cover;
-  background-position: center;   */
 }
 
 .page-footer .container {
