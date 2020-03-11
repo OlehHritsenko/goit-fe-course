@@ -150,7 +150,6 @@ img {
 }
 
 .name {
-  float: left;
   background-color: #323232;
   width: 201px;
   height: 40px;
@@ -170,7 +169,6 @@ img {
 }
 
 .price {
-  float: right;
   background-color: #8c8c8c;
   width: 54px;
   height: 40px;
