@@ -231,8 +231,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 255px;
-  height: 322px;
   position: relative;
 }
 
@@ -305,7 +303,7 @@ body {
   margin: 0;
   padding: 0;
   border-width: 10px;
-  border-color: rgba(255, 255, 255);
+  border-color: #ffffff;
   border-style: solid;
   background-color: rgba(0, 0, 0, 0.55);
   position: absolute;
@@ -362,6 +360,7 @@ body {
 
 .card li:hover .fon-block {
   display: block;
+  border-color: opacity(0.55);
 }
 
 .logo:hover,
@@ -392,9 +391,14 @@ body {
 
 .infobox {
   font-size: 16px;
+  line-height: 1.2;
   font-family: "OpenSans";
   color: #fefefe;
-  line-height: 1.2;
+}
+
+.design {
+  font-family: "Verdana";
+  color: #fefefe;
 }
 
 .theme {
