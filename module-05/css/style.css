@@ -17,8 +17,6 @@ html {
 body {
   font-family: "OpenSans", "Roboto", sans-serif;
   color: #0f0101;
-  font-size: 14px;
-  line-height: 21px;
 }
 
 .container {
@@ -36,22 +34,21 @@ body {
 
 .page-nav {
   width: 1110px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .main-menu {
-  display: block;
   font-size: 14px;
   font-family: "OpenSans";
   color: #1abc9c;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 0.786;
+  line-height: 1.2;
   list-style: none;
-  width: 463px;
+  min-width: 466px;
   margin: 0;
-  margin-top: 9px;
+  margin-top: 6px;
   padding: 0;
   float: right;   
 }
@@ -79,21 +76,33 @@ body {
 
 .body-color {
   background-color: #e9f0fd;
+  background-size: cover;
+}
+
+.title {
+  margin-bottom: 100px;
 }
 
 .banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
-  background-position-x: initial;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 2);
+  opacity: 0.52;
+  position: absolute;
 }
 
 .fon {
-  min-height: 100%;
+  height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 50% 50%;
   background-size: cover;
 }
 
@@ -104,6 +113,7 @@ body {
 }
 
 .main-tour::before {
+  display: block;
   content: "";
   width: 104px;
   height: 104px;
@@ -113,6 +123,7 @@ body {
   background-position: center;
   position: absolute;
   left: 0;
+  
 }
 
 .prev {
@@ -162,7 +173,7 @@ body {
   font-family: "Roboto";
   color: #ff7200;
   text-transform: uppercase;
-  line-height: 1.2;
+  line-height: 1.6;
 }
 
 .kinds {
@@ -177,13 +188,6 @@ body {
   left: 13%;
 }
 
-.banner:hover {
-  width: 100%;
-  height: 100%;
-  background-color: #000002;
-  opacity: 0.897;
-}
-
 .title .banner:hover .tour,
 .title .banner:hover .kinds {
   color: #ffffff;
@@ -195,7 +199,7 @@ body {
   font-family: "Roboto";
   color: #515151;
   text-transform: uppercase;
-  line-height: 0.667;
+  line-height: 1.6;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 80px;
@@ -246,7 +250,7 @@ body {
 }
 
 .block-info {
-  width: 255px;
+  width: 100%;
   height: 322px;
 }
 
@@ -258,11 +262,12 @@ body {
   font-family: "Roboto";
   color: #ffffff;
   text-transform: uppercase;
-  line-height: 1.778;
+  line-height: 1.2;
   width: 201px;
   height: 40px;
   margin: 0;
-  padding-top: 6px;
+  padding-top: 9px;
+  padding-bottom: 10px;
   padding-left: 14px;
   background-color: #323232; 
 }
@@ -275,12 +280,13 @@ body {
   font-family: "Roboto";
   color: #ffffff;
   text-transform: uppercase;
-  line-height: 1.778;
+  line-height: 1.2;
   width: 54px;
   height: 40px;
   margin: 0;
-  padding-top: 6px;
-  padding-left: 14px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 10px;
   background-color: #8c8c8c;  
 }
 
@@ -299,15 +305,14 @@ body {
   margin: 0;
   padding: 0;
   border-width: 10px;
-  border-color: rgb(255, 255, 255);
-  border-style: none;
-  opacity: 0.55;
+  border-color: rgba(255, 255, 255);
+  border-style: solid;
   background-color: rgba(0, 0, 0, 0.55);
   position: absolute;
 }
 
 .mini-block {
-  width: 235px;
+  width: 100%;
   height: 262px;
   margin: 0;
   padding: 0;
@@ -389,13 +394,13 @@ body {
   font-size: 16px;
   font-family: "OpenSans";
   color: #fefefe;
-  line-height: 1.75;
+  line-height: 1.2;
 }
 
 .theme {
   font-size: 16px;
   font-family: "OpenSans";
-  line-height: 1.75;
+  line-height: 1.2;
   color: #1abc9c;
   text-decoration: none;
 }
