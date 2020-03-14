@@ -34,8 +34,8 @@ body {
 
 .page-nav {
   width: 1110px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .main-menu {
@@ -202,8 +202,7 @@ body {
   line-height: 1.6;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 80px;
-  padding-bottom: 42px;
+  margin-bottom: 108px;
 }
 
 .collection::after {
@@ -213,7 +212,7 @@ body {
   width: 164px;
   height: 7px;
   position: absolute;
-  bottom: 0px;
+  margin-top: 16px;
   left: 50%;
   right: 50%;
   transform: translateX(-50%);
@@ -252,10 +251,12 @@ body {
   height: 322px;
 }
 
-.name {
+.price-name {
   position: absolute;
   bottom: 0;
-  left: 0;
+}
+
+.name {
   font-size: 18px;
   font-family: "Roboto";
   color: #ffffff;
@@ -267,13 +268,11 @@ body {
   padding-top: 9px;
   padding-bottom: 10px;
   padding-left: 14px;
-  background-color: #323232; 
+  background-color: #323232;
+  float: left;
 }
 
 .price {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   font-size: 18px;
   font-family: "Roboto";
   color: #ffffff;
@@ -285,7 +284,8 @@ body {
   padding-top: 9px;
   padding-bottom: 10px;
   padding-left: 10px;
-  background-color: #8c8c8c;  
+  background-color: #8c8c8c;
+  float: right; 
 }
 
 .card>li:hover .name {
