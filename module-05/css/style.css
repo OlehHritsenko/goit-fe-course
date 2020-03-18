@@ -33,7 +33,6 @@ body {
 }
 
 .page-nav {
-  width: 1110px;
   margin-top: 32px;
   margin-bottom: 32px;
 }
@@ -79,10 +78,6 @@ body {
   background-size: cover;
 }
 
-.title {
-  margin-bottom: 100px;
-}
-
 .banner {
   display: flex;
   justify-content: center;
@@ -115,6 +110,7 @@ body {
 .main-tour::before {
   display: block;
   content: "";
+  clear: both;
   width: 104px;
   height: 104px;
   background-color: #54a18f;
@@ -123,7 +119,7 @@ body {
   background-position: center;
   position: absolute;
   left: 0;
-  
+  bottom: 0;
 }
 
 .prev {
@@ -133,6 +129,7 @@ body {
   height: 104px;
   position: absolute;
   left: 0;
+  bottom: 0;
 }
 
 .tour a:hover {
@@ -152,7 +149,7 @@ body {
   background-position: center;
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
 }
 
 .next {
@@ -162,15 +159,15 @@ body {
   height: 104px;
   position: absolute;
   right: 0;
-  top: 0;
-  z-index: 1;
+  bottom: 0;
+  z-index: 9;
 }
 
 .tour {
   margin: 0;
-  padding-bottom: 10px;
   font-size: 60px;
   font-family: "Roboto";
+  font-weight: 900;
   color: #ff7200;
   text-transform: uppercase;
   line-height: 1.6;
@@ -181,11 +178,11 @@ body {
   margin: 0;
   font-size: 26px;
   font-family: "Roboto";
+  font-weight: 200;
   color: #ff7200;
   text-transform: uppercase;
   line-height: 1.2;
-  position: absolute;
-  left: 13%;
+  transform: translate(-27%);
 }
 
 .title .banner:hover .tour,
@@ -197,6 +194,7 @@ body {
   position: relative;
   font-size: 48px;
   font-family: "Roboto";
+  font-weight: 900;
   color: #515151;
   text-transform: uppercase;
   line-height: 1.6;
@@ -288,7 +286,7 @@ body {
   float: right; 
 }
 
-.card>li:hover .name {
+.card li:hover .name {
   background-color: #1abc9c
 }
 
@@ -336,7 +334,7 @@ body {
   align-items: center;
 }
 
-.logo.long {
+.logo .long {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -378,15 +376,13 @@ body {
 }
 
 .page-footer {
-  height: 90px;
   background-color: #323232;
 }
 
 .page-footer .container {
-  min-height: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .infobox {
@@ -394,11 +390,8 @@ body {
   line-height: 1.2;
   font-family: "OpenSans";
   color: #fefefe;
-}
-
-.design {
-  font-family: "Verdana";
-  color: #fefefe;
+  margin: 0;
+  padding: 0;
 }
 
 .theme {
