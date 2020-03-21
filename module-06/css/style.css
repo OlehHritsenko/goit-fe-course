@@ -336,14 +336,18 @@ html {
 }
 
 .bottom {
-    height: 64px;
     display: flex;
     align-items: center;
 }
 
 .wrapper {
+    width: 1200px;
+    padding-top: 12px;
+    margin-bottom: 12px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #cccccc;
 }
 
 .boom {
