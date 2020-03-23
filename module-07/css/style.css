@@ -121,7 +121,7 @@ body {
     clear: both;
     width: 76px;
     height: 76px;
-    background-image: url(img/logo/Icon-Basket.png);
+    background-image: url(../img/logo/Icon-Basket.png);
     background-repeat: no-repeat;
     background-position: center;
     border: 3px solid #fed136;
@@ -138,7 +138,7 @@ body {
     clear: both;
     width: 76px;
     height: 76px;
-    background-image: url(img/logo/Icon-Laptop.png);
+    background-image: url(../img/logo/Icon-Laptop.png);
     background-repeat: no-repeat;
     background-position: center;
     border: 3px solid #fed136;
@@ -156,7 +156,7 @@ body {
     clear: both;
     width: 76px;
     height: 76px;
-    background-image: url(img/logo/Icon-Locked.png);
+    background-image: url(../img/logo/Icon-Locked.png);
     background-repeat: no-repeat;
     background-position: center;
     border: 3px solid #fed136;
