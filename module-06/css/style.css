@@ -17,7 +17,6 @@ html {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding-bottom: 96px;
 }
 
 .main-menu {
@@ -26,6 +25,7 @@ html {
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 28px;
+  margin-bottom: 96px;
 }
 
 .site-logo {
@@ -49,6 +49,7 @@ html {
 }
 
 .list-menu a {
+    position: relative;
     font-size: 14px;
     font-family: "Montserrat";
     color: #95e1d3;
@@ -66,6 +67,8 @@ html {
     margin-top: 10px;
     width: 50px;
     height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
     transition-property: opacity;
     transition-duration: 200ms;
     opacity: 0;
@@ -125,6 +128,7 @@ html {
     justify-content: space-around;
     padding: 0;
     margin: 0;
+    padding-bottom: 96px;
     list-style: none;
     min-height: 74px;
 }
@@ -245,11 +249,12 @@ html {
 }
 
 .card-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 96px;
+    padding: 0;
 }
 
 .blue-background {
