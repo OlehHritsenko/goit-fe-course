@@ -92,7 +92,8 @@ html {
 }
 
 .list-service {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 }
 
 .work {
@@ -233,7 +234,8 @@ html {
 }
 
 .list-team {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-list li{
