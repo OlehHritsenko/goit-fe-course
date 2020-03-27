@@ -19,11 +19,16 @@ html {
   margin: 0 auto;
 }
 
+.home_page {
+    display: flex;
+}
+
 .main-menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
+  width: 100%;
   margin-top: 28px;
   margin-bottom: 96px;
 }
@@ -86,6 +91,10 @@ html {
   opacity: 1;
 }
 
+.list-service {
+    display: inline-block;
+}
+
 .work {
     font-size: 24px;
     font-family: "Kaushan Script";
@@ -128,7 +137,7 @@ html {
     justify-content: space-around;
     padding: 0;
     margin: 0;
-    padding-bottom: 96px;
+    margin-bottom: 96px;
     list-style: none;
     min-height: 74px;
 }
@@ -223,6 +232,10 @@ html {
     padding: 0;
 }
 
+.list-team {
+    display: inline-block;
+}
+
 .card-list li{
     list-style: none;
     display: inline-block;
@@ -253,7 +266,7 @@ html {
     justify-content: space-between;
     list-style: none;
     margin: 0;
-    padding-bottom: 96px;
+    margin-bottom: 96px;
     padding: 0;
 }
 
