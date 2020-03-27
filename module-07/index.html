@@ -9,36 +9,41 @@
 </head>
 <body>
     <header class="container">
-        <nav class="page-nav">
-            <a href="#" class="site-logo">
-                <img src="img/logo/Logo.png" alt="site-logo">
-            </a>
-            <ul class="list-menu">
-                <li><a href="#">home</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-        </nav>
+        <div class="home_page">
+            <nav class="page-nav">
+                <a href="#" class="site-logo">
+                    <img src="img/logo/Logo.png" alt="site-logo">
+                </a>
+                <ul class="list-menu">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main class="container">
-        <section class="info-services">
+    <main>
+        <section class="info-services container">
             <div class="title">
                 <h2 class="title-services">services</h2>
                 <p class="about-title">Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div class="list-services">
                 <ul class="list">
-                    <li class="list-service-item-basket">
+                    <li class="list-service-item">
+                        <img src="img/logo/Icon-Basket.png" alt="basket">
                         <p class="name-service">E-Commerce</p>
                         <p class="info-about-service">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt necessitatibus incidunt alias laborum suscipit iste?</p>
                     </li>
-                    <li class="list-service-item-laptop">
+                    <li class="list-service-item">
+                        <img src="img/logo/Icon-Laptop.png" alt="laptop">
                         <p class="name-service">Responsive Web</p>
                         <p class="info-about-service">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt necessitatibus incidunt alias laborum suscipit iste?</p>
                     </li>
-                    <li class="list-service-item-locked">
+                    <li class="list-service-item">
+                        <img src="img/logo/Icon-Locked.png" alt="locked">
                         <p class="name-service">Web Security</p>
                         <p class="info-about-service">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt necessitatibus incidunt alias laborum suscipit iste?</p>
                     </li>
@@ -47,22 +52,20 @@
         </section>
     </main>
     <footer class="background-color">
-        <div class=" title container">
+        <div class=" titleform container">
             <h2 class="title-contact_us">contact us</h2>
             <p class="about-title">Lorem ipsum dolor sit amet consectetur.</p>
-            <div>
-                <form  class="table-form" action="#" method="POST">
-                    <div class="post-message">
-                        <div class="table-info">
-                            <input type="name" name="your_name" placeholder="YOUR NAME*" required>
-                            <input type="email" name="your_email" placeholder="YOUR EMAIL*" required>
-                            <input type="text" name="subject" value="SUBJECT">
-                        </div>
-                        <textarea class="text" type="message" name="body" rows="10" cols="30" placeholder="YOUR MESSAGE*" required></textarea>
+            <form  class="table-form" action="#" method="POST">
+                <div class="post-message">
+                    <div class="table-info">
+                        <input type="name" name="your_name" placeholder="YOUR NAME*" required>
+                        <input type="email" name="your_email" placeholder="YOUR EMAIL*" required>
+                        <input type="text" name="subject" value="SUBJECT">
                     </div>
-                    <button class="send-button">send message</button>
-                </form>
-            </div>
+                    <textarea class="text" type="message" name="body" rows="10" cols="30" placeholder="YOUR MESSAGE*" required></textarea>
+                </div>
+                <button class="send-button">send message</button>
+            </form>
         </div>
     </footer>
     

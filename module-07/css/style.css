@@ -17,10 +17,11 @@ body {
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    src: local('Montserrat Regular'), local('Montserrat-Regular'),
-         url('/fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('/fonts/montserrat-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+    font-weight: bold;
+    src: url('../fonts/montserrat-v14-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Bold'), local('Montserrat-bold'),
+         url('../fonts/Montserrat-Bold.ttf') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
 }
 
 /* roboto-slab-regular - latin */
@@ -48,11 +49,16 @@ body {
     margin: 0 auto;
 }
 
+.home_page {
+    display: flex;
+}
+
 .page-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   margin-top: 50px;
   margin-bottom: 120px;
 }
@@ -72,6 +78,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     line-height: 1.2;
+    transition: color 200ms linear;
 }
 
 .list-menu li:not(:last-child) {
@@ -81,10 +88,6 @@ body {
 .list-menu a:hover,
 .list-menu a:focus {
     color: #fed136;
-}
-
-.info-services {
-    padding-bottom: 120px;
 }
 
 .title-services {
@@ -109,63 +112,23 @@ body {
     margin-bottom: 74px;
 }
 
+.list-services {
+    display: flex;
+}
+
 .list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0;
+    margin-bottom: 120px;
     padding: 0;
 }
 
-.list-service-item-basket:before {
-    display: block;
-    content: "";
-    clear: both;
-    width: 76px;
-    height: 76px;
-    background-image: url(../img/logo/Icon-Basket.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 3px solid #fed136;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.list-service-item-laptop:before {
-    display: block;
-    content: "";
-    clear: both;
-    width: 76px;
-    height: 76px;
-    background-image: url(../img/logo/Icon-Laptop.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 3px solid #fed136;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.list-service-item-locked:before {
-    display: block;
-    content: "";
-    clear: both;
-    width: 76px;
-    height: 76px;
-    background-image: url(../img/logo/Icon-Locked.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 3px solid #fed136;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+.list-service-item img {
+    width: 72px;
+    height: auto;
+    margin-bottom: 24px;
 }
 
 .list li {
@@ -174,8 +137,6 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    padding-top: 96px;
-    position: relative;
 }
 
 .list li:not(:last-child) {
@@ -201,8 +162,7 @@ body {
 }
 
 .background-color {
-    min-height: 676px;
-    width: 100%;
+    display: flex;
     background-image: url(../img/image/Background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -218,7 +178,7 @@ body {
     line-height: 1.6;
     text-align: center;
     margin: 0;
-    padding-top: 100px;
+    margin-top: 100px;
 }
 
 .table-form {
@@ -235,6 +195,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .table-info input {
@@ -244,32 +205,28 @@ body {
     border-radius: 5px;
 }
 
-.table-info input:not(:last-child) {
-    margin-bottom: 28px;
-}
-
 .table-info input[type="name"]:valid {
     outline: #008000;
     outline-style: solid;
-    outline-width: thin;
+    outline-width: medium;
 }
 
 .table-info input[type="name"]:invalid {
     outline: #ff0000;
     outline-style: solid;
-    outline-width: thin;
+    outline-width: medium;
 }
 
 .table-info input[type="email"]:valid {
     outline: #008000;
     outline-style: solid;
-    outline-width: thin;
+    outline-width: medium;
 }
 
 .table-info input[type="email"]:invalid {
     outline: #ff0000;
     outline-style: solid;
-    outline-width: thin;
+    outline-width: medium;
 }
 
 .text {
@@ -277,20 +234,20 @@ body {
     height: 212px;
     border-radius: 5px;
     margin: 0;
+    margin-left: 30px;
     padding: 10px;
-    outline: none;
 }
 
 .text:valid {
     outline: #008000;
     outline-style: solid;
-    outline-width: thin;
+    outline-width: medium;
 }
 
 .text:invalid {
     outline: #ff0000;
     outline-style: solid;
-    outline-width: thin;
+    outline-width: medium;
 }
 
 .send-button {
@@ -307,4 +264,5 @@ body {
     border: 0;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 114px;
 }
