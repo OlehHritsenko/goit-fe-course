@@ -120,6 +120,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
     margin: 0;
     margin-bottom: 120px;
     padding: 0;
@@ -137,10 +138,6 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-}
-
-.list li:not(:last-child) {
-    margin-right: 35px;
 }
 
 .name-service {
@@ -183,6 +180,7 @@ body {
 
 .table-form {
     text-align: center;
+    margin-bottom: 114px;
 }
 
 .post-message {
@@ -264,5 +262,4 @@ body {
     border: 0;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 114px;
 }
