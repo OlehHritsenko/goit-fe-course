@@ -1,0 +1,358 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Montserrat", "Roboto", sans-serif;
+}
+
+.container {
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.home_page {
+    background-image: url(../img/image/Vector\ Smart\ Object\ mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.login_button {
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.click {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    width: 90px;
+    height: 38px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    transition: border-radius 200ms linear;
+}
+
+.click:active {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 20px;
+}
+
+.block {
+    margin-top: 126px;
+    margin-bottom: 30px;
+}
+
+.main_heading {
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    width: 292px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+.info {
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: lighter;
+    color: #ffffff;
+    line-height: 1.2;
+    width: 226px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.search {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.2;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff4e50;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+    margin-bottom: 140px;
+    transition: border-radius 200ms linear;
+}
+
+.search:active {
+    border-radius: 10px;
+}
+
+.best_partner {
+    font-size: 22px;
+    font-family: "Montserrat";
+    color: #333333;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 12px;
+    padding-top: 66px;
+}
+
+.list_partners {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.card-partner:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+}
+
+.icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.card img,
+.icon img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.name {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: #333333;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.info-partner {
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 300;
+    color: #666666;
+    line-height: 1.2;
+    width: 226px;
+    margin: 0 auto;
+}
+
+.page-footer {
+    text-align: center;
+}
+
+.other {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: #ff4d4f;
+    font-weight: bold;
+    line-height: 1.2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 56px;
+    border: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ff4e50;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: border-radius 300ms linear;
+}
+
+.other:active {
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        min-width: 768px;
+    }
+
+    .home_page {
+        background-image: url(../img/image/Vector\ Smart\ Object\ Tablet.jpg);
+    }
+
+    .site-menu {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 154px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .login_button {
+        margin: 0;
+        margin-right: 50px;
+    }
+
+    .block {
+        margin: 0;
+        margin-left: 50px;
+    }
+
+    .main_heading {
+        font-size: 52px;
+        width: 504px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .info {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .search {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 192px;
+    }
+
+    .best_partner {
+        margin-bottom: 36px;
+    }
+
+    .list_partners {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 492px;
+        margin: 0 auto;
+    }
+
+    .card-partner:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .card-partner {
+        width: 236px;
+        margin: 0;
+    }
+
+    .card-partner:nth-child(odd) {
+        margin-bottom: 40px;
+    }
+
+    .other {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: 0;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .first {
+        order: -2;
+    }
+
+    .three {
+        order: -1;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        min-width: 944px;
+    }
+
+    .home_page {
+        background-image: url(../img/image/Vector\ Smart\ Object\ Desctop.jpg);
+    }
+
+    .block {
+        margin: 0;
+    }
+
+    .login_button {
+        margin: 0;
+    }
+
+    .info {
+        width: 400px;
+    }
+
+    .best_partner {
+        line-height: 1.6;
+    }
+
+    .list_partners {
+        width: 944px;
+    }
+
+    .card-partner {
+        width: 236px;
+    }
+
+    .card-partner:nth-child(odd) {
+        margin-bottom: 0;
+    }
+
+    .click {
+        cursor: pointer;
+    }
+
+    .search {
+        cursor: pointer;
+    }
+
+    .other {
+        margin-bottom: 70px;
+        cursor: pointer;
+    }
+
+    .click:hover,
+    .click:focus {
+        border-width: 2px;
+        border-style: solid;
+        border-color: #ffffff;
+        border-radius: 20px;
+    }
+
+    .search:hover,
+    .search:focus {
+        border-radius: 10px;
+    }
+
+    .other:hover,
+    .other:focus {
+       border-radius: 10px; 
+    }
+}
+        
