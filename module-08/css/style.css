@@ -237,6 +237,7 @@ body {
     .info {
         font-size: 24px;
         margin-bottom: 30px;
+        width: fit-content;
     }
 
     .search {
