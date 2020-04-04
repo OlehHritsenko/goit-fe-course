@@ -49,7 +49,8 @@ body {
     transition: border-radius 300ms linear;
 }
 
-.click:active {
+.click:active,
+.click:hover {
     border-style: solid;
     border-width: 2px;
     border-radius: 20px;
@@ -107,7 +108,8 @@ body {
     transition: border-radius 300ms linear;
 }
 
-.search:active {
+.search:active,
+.search:hover {
     border-radius: 10px;
 }
 
@@ -181,10 +183,6 @@ body {
     margin: 0 auto;
 }
 
-.page-footer {
-    text-align: center;
-}
-
 .other {
     font-size: 14px;
     font-family: "Montserrat";
@@ -206,7 +204,8 @@ body {
     transition: border-radius 300ms linear;
 }
 
-.other:active {
+.other:active,
+.other:hover {
     border-radius: 10px;
 }
 
@@ -400,6 +399,4 @@ body {
     .three {
         order: -1;
     }
-}
-}
-        
+}     
