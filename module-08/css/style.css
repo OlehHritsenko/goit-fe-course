@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    min-width: 320px;
+    max-width: 767px;
     margin: 0 auto;
 }
 
@@ -21,6 +21,7 @@ body {
     background-image: url(../img/image/Vector\ Smart\ Object\ mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: auto;
     display: flex;
@@ -37,7 +38,7 @@ body {
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.2;
     text-align: center;
     width: 90px;
@@ -45,14 +46,17 @@ body {
     padding: 0;
     border: none;
     background-color: transparent;
-    transition: border-radius 200ms linear;
+    transition: border-radius 300ms linear;
 }
 
 .click:active {
-    border-width: 2px;
     border-style: solid;
-    border-color: #ffffff;
+    border-width: 2px;
     border-radius: 20px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(26, 25, 21, 0);
+    width: 94px;
+    height: 40px;
 }
 
 .block {
@@ -100,11 +104,17 @@ body {
     padding-right: 40px;
     margin: 0 auto;
     margin-bottom: 140px;
-    transition: border-radius 200ms linear;
+    transition: border-radius 300ms linear;
 }
 
 .search:active {
     border-radius: 10px;
+}
+
+.archive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .best_partner {
@@ -114,14 +124,16 @@ body {
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
-    margin: 0;
+    width: 320px;
+    margin: auto;
     margin-bottom: 12px;
-    padding-top: 66px;
+    margin-top: 66px;
 }
 
 .list_partners {
-    list-style: none;
     text-align: center;
+    list-style: none;
+    width: 320px;
     padding: 0;
     margin: 0;
 }
@@ -198,9 +210,10 @@ body {
     border-radius: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media(min-width: 768px) and (max-width: 1199px) {
     .container {
         min-width: 768px;
+        max-width: 1199px;
     }
 
     .home_page {
@@ -247,19 +260,16 @@ body {
     }
 
     .best_partner {
-        margin-bottom: 36px;
+        width: 416px;
+        margin-bottom: 30px;
     }
 
     .list_partners {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         width: 492px;
         margin: 0 auto;
-    }
-
-    .card-partner:not(:last-child) {
-        margin-bottom: 0;
     }
 
     .card-partner {
@@ -288,7 +298,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media(min-width: 1200px) {
     .container {
         min-width: 944px;
     }
@@ -297,8 +307,26 @@ body {
         background-image: url(../img/image/Vector\ Smart\ Object\ Desctop.jpg);
     }
 
+    .site-menu {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 154px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
     .block {
         margin: 0;
+    }
+
+    .main_heading {
+        font-size: 52px;
+        line-height: 1.2;
+        width: 504px;
+        margin-bottom: 30px;
     }
 
     .login_button {
@@ -306,14 +334,23 @@ body {
     }
 
     .info {
+        font-size: 24px;
         width: 400px;
+        margin-bottom: 36px;
+    }
+
+    .search {
+        margin-bottom: 232px;
     }
 
     .best_partner {
+        width: 416px;
         line-height: 1.6;
+        margin-bottom: 30px;
     }
 
     .list_partners {
+        display: flex;
         width: 944px;
     }
 
@@ -355,5 +392,14 @@ body {
     .other:focus {
        border-radius: 10px; 
     }
+
+    .first {
+        order: -2;
+    }
+
+    .three {
+        order: -1;
+    }
+}
 }
         
