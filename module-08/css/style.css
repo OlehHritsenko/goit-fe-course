@@ -357,8 +357,9 @@ body {
         width: 236px;
     }
 
+    .card-partner:not(:last-child),
     .card-partner:nth-child(odd) {
-        margin-bottom: 0;
+        margin: 0;
     }
 
     .click {
@@ -370,6 +371,9 @@ body {
     }
 
     .other {
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-top: 40px;
         margin-bottom: 70px;
         cursor: pointer;
     }
