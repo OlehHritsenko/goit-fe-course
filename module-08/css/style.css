@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    max-width: 767px;
+    width: 280px;
     margin: 0 auto;
 }
 
@@ -29,9 +29,12 @@ body {
     text-align: center;
 }
 
+.site-menu {
+    margin-top: 30px;
+}
+
 .login_button {
     justify-content: center;
-    margin-top: 30px;
 }
 
 .click {
@@ -191,8 +194,8 @@ body {
     line-height: 1.2;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 68px;
+    padding-right: 68px;
     margin-top: 20px;
     margin-bottom: 56px;
     border: none;
@@ -211,8 +214,7 @@ body {
 
 @media(min-width: 768px) and (max-width: 1199px) {
     .container {
-        min-width: 768px;
-        max-width: 1199px;
+        width: 670px;
     }
 
     .home_page {
@@ -276,6 +278,10 @@ body {
         margin: 0;
     }
 
+    .card-partner:not(:last-child) {
+        margin-bottom: 0;
+    }
+
     .card-partner:nth-child(odd) {
         margin-bottom: 40px;
     }
@@ -299,7 +305,7 @@ body {
 
 @media(min-width: 1200px) {
     .container {
-        min-width: 944px;
+        width: 944px;
     }
 
     .home_page {
