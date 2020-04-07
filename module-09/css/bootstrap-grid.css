@@ -31,7 +31,7 @@ html {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 748px;
+    max-width: 768px;
   }
 }
 
@@ -43,7 +43,7 @@ html {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 942px;
+    max-width: 944px;
   }
 }
 

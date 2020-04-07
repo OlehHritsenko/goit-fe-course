@@ -16,10 +16,6 @@ html {
     text-align: center;
 }
 
-.login-button {
-    margin-top: 2rem;
-}
-
 .button {
     font-size: 14px;
     font-family: "Montserrat";
@@ -173,9 +169,13 @@ html {
 }
 
 @media (max-width: 767px) {
-  .card-info [class*="col-"]:not(:last-child) {
+    .card-info [class*="col-"]:not(:last-child) {
       margin-bottom: 20px;
-  } 
+    }
+    
+    .navigation {
+        margin-top: 30px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -212,6 +212,10 @@ html {
         margin-bottom: 230px;
     }
 
+    .card-info {
+        margin-bottom: 40px;
+    }
+
     .card-info [class*="col-"]:nth-child(odd) {
         margin-bottom: 56px;
     }
@@ -229,9 +233,9 @@ html {
     }
 
     .other {
-        padding-left: 30px;
-        padding-right: 30px;
-        margin-top: 40px;
+        padding-left: 26px;
+        padding-right: 26px;
+        margin: 0;
         margin-bottom: 40px;
     }
 }
@@ -274,6 +278,10 @@ html {
         margin-bottom: 230px;
         cursor: pointer;
     }
+
+    .card-info {
+        margin-bottom: 40px;
+    }
     
     .first {
         order: -2;
@@ -286,7 +294,7 @@ html {
     .other {
         padding-left: 30px;
         padding-right: 30px;
-        margin-top: 40px;
+        margin: 0;
         margin-bottom: 74px;
         cursor: pointer;
     }
