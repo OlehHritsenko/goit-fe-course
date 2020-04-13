@@ -233,6 +233,14 @@ html {
     padding: 0;
 }
 
+.info {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.2;
+    margin: 0;
+}
+
 .list-team {
     display: flex;
     flex-direction: column;
