@@ -136,7 +136,7 @@ html {
      opacity: 1;
  }
  
- .main {
+ .header__main {
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
@@ -151,6 +151,7 @@ html {
  
  .block {
      text-align: center;
+     width: 820px;
      margin: 0;
      padding: 0;
  }
@@ -170,7 +171,6 @@ html {
      font-weight: bold;
      text-transform: uppercase;
      line-height: 0.933;
-     width: 820px;
      margin: 0 auto;
      margin-bottom: 120px;
  }
