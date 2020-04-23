@@ -11,6 +11,10 @@ html {
      -webkit-box-sizing: inherit;
              box-sizing: inherit;
  }
+
+body {
+    font-family: 'Montserrat', 'Kaushan+Script','Roboto', sans-serif;
+}
  
  .clearfix {
      display: table;

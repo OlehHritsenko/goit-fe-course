@@ -1,0 +1,14 @@
+.header {
+    background: url('../images/image/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 26px;
+    padding-bottom: 230px;
+}
+ 
+@media (min-resolution: 192dpi) {
+    header {
+        background: url('../images/image/Layer\ 15@2x.jpg');
+    }
+}

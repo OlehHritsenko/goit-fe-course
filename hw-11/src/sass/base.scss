@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $main-font-stack;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}

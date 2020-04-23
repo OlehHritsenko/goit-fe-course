@@ -1,0 +1,31 @@
+#svg {
+    display: none;
+}
+
+.shop__cart {
+    width: 15px;
+    height: 15px;
+    fill: $primary-white-color;
+
+    &:hover {
+        fill: $first-accent-color;
+        transition-timing-function: linear;
+        transition-duration: 300ms;
+        transition: color 300ms linear;
+        transition-property: all;
+    }
+}
+ 
+.shop__glass {
+    width: 15px;
+    height: 15px;
+    fill: $primary-white-color;
+
+    &:hover {
+        fill: $first-accent-color;
+        transition-timing-function: linear;
+        transition-duration: 300ms;
+        transition: color 300ms linear;
+        transition-property: all;
+    }
+}

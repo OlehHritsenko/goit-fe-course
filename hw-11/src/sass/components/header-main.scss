@@ -1,0 +1,39 @@
+.header__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.block {
+    text-align: center;
+    width: 820px;
+    margin: 0;
+    padding: 0;
+}
+ 
+.main__subtitle {
+    font-size: $subtitle-text-size;
+    font-family: "Kaushan Script";
+    color: $primary-white-color;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+ 
+.main__title {
+    font-size: $title-text-size;
+    font-family: "Montserrat";
+    color: $primary-white-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.933;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.buttton {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}

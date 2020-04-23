@@ -1,0 +1,35 @@
+.social-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 227px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}  
+ 
+.socials__item {
+    width: 56px;
+    height: 56px;
+    background-color:  $first-accent-color;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 300ms linear;
+
+    &:hover,
+    &:focus {
+      background-color: $secondory-accent-color;
+    }
+
+    &:hover .icon {
+      fill: $primary-white-color;
+    }
+}
+ 
+.icon {
+    width: 26px;
+    height: 26px;
+    fill: $secondory-accent-color;
+}
+ 
