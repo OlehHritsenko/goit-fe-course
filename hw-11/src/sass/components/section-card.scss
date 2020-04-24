@@ -7,67 +7,71 @@
     list-style: none;
 }
    
-.section__card {
-    flex-basis: 380px;
-    padding-left: 80px;
-    min-height: 74px;
-    position: relative;
-    margin-bottom: 100px;
+.section {
+    &__card {
+        flex-basis: 380px;
+        padding-left: 80px;
+        min-height: 74px;
+        position: relative;
+        margin-bottom: 100px;
+    }
 
-    &:nth-child(n + 4) {
+    &__card:nth-child(n + 4) {
         margin-bottom: 0;
+    }
+
+    &__card-title {
+        font-size: $first-text-size;
+        font-family: "Montserrat";
+        color: $primary-dark-color;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin: 0;
+        margin-bottom: 18px;
+        padding: 0;
+    }
+
+    &__card-text {
+        font-size: $first-text-size;
+        font-family: "Roboto";
+        color: $secondory-dark-color;
+        line-height: 1.2;
+        margin: 0;
     }
 }
 
-.section__card-title {
-    font-size: $first-text-size;
-    font-family: "Montserrat";
-    color: $primary-dark-color;
-    text-transform: uppercase;
-    line-height: 1.2;
-    margin: 0;
-    margin-bottom: 18px;
-    padding: 0;
-}
- 
-.section__card-text {
-    font-size: $first-text-size;
-    font-family: "Roboto";
-    color: $secondory-dark-color;
-    line-height: 1.2;
-    margin: 0;
-}
- 
-.box-image::before {
-    display: inline-block;
-    content: "";
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    top: 0;
-    left: 20px;
-}
- 
-.box-image__alarm::before {
-    background: url(../images/logo/ALARM.png);
-}
-   
-.box-image__linegraph::before {
-    background-image: url(../images/logo/GRAPH.png);
-}
-   
-.box-image__computer::before {
-    background-image: url(../images/logo/COMPUTER.png);
-}
-   
-.box-image__book::before {
-    background-image: url(../images/logo/BOOK.png);
-}
-   
-.box-image__home::before {
-    background-image: url(../images/logo/HOME.png);
-}
-   
-.box-image__digital::before {
-    background-image: url(../images/logo/IMAGE.png);
+.box-image {
+    &::before {
+        @include inline-block();
+        content: "";
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 0;
+        left: 20px;
+    }
+    
+    &__alarm::before {
+        background: url(../images/logo/ALARM.png);
+    }
+
+    &__linegraph::before {
+        background-image: url(../images/logo/GRAPH.png);
+    }
+
+    &__computer::before {
+        background-image: url(../images/logo/COMPUTER.png);
+    }
+
+    &__book::before {
+        background-image: url(../images/logo/BOOK.png);
+    }
+
+    &__home::before {
+        background-image: url(../images/logo/HOME.png);
+    }
+
+    &__digital::before {
+        background-image: url(../images/logo/IMAGE.png);
+    }
 }

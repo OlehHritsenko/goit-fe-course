@@ -1,15 +1,12 @@
 .bottom {
-    display: flex;
-    align-items: center;
+    @include center-flex('');
     padding: 0;
     padding-bottom: 12px;
 }
    
 .bottom__wrapper {
+    @include space-between('ver');
     width: 1200px;
     padding-top: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-top: 1px solid $border-color;
 }

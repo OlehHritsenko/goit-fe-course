@@ -1,32 +1,33 @@
 .bottom__form {
-    display: flex;
-    justify-content: flex-end;
+    @include center-flex('end');
 }
 
-.button__email {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    color: #b3b3b3;
-    width: 230px;
-    height: 40px;
-    outline: none;
-    margin: 0;
-    padding-left: 10px;
-}
-   
-.button__sub {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    width: 150px;
-    height: 40px;
-    margin: 0px;
-    padding: 0px;
-    background-color: $background-color;
-    color: $primary-white-color;
-    border: 0;
-    outline: none;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
+.button {
+    &__email {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        color: $shadow-color;
+        width: 230px;
+        height: 40px;
+        outline: none;
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    &__sub {
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        width: 150px;
+        height: 40px;
+        margin: 0px;
+        padding: 0px;
+        background-color: $background-color;
+        color: $primary-white-color;
+        border: 0;
+        outline: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
 }

@@ -1,5 +1,5 @@
 .header__logo {
-    display: inline-block;
+    @include inline-block();
     width: 86px;
     height: 23px;
     margin: 0;
