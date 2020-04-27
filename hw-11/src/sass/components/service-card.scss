@@ -1,4 +1,4 @@
-.section__list {
+.service__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -7,7 +7,7 @@
     list-style: none;
 }
    
-.section {
+.service {
     &__card {
         flex-basis: 380px;
         padding-left: 80px;

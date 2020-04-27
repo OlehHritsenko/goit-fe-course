@@ -4,20 +4,20 @@
 @import 'helpers/variables';
 @import 'helpers/mixin';
 @import 'helpers/placeholder';
+@import 'helpers/container';
 @import 'normalize';
 @import 'base';
 
 // COMPONENTS 
-@import 'components/container';
-@import 'components/page-header';
+@import 'components/header';
 @import 'components/page-nav';
 @import 'components/site-logo';
 @import 'components/header-main';
 @import 'components/header-svg';
 @import 'components/header-button';
-@import 'components/section';
-@import 'components/section-title';
-@import 'components/section-card';
+@import 'components/service';
+@import 'components/service-title';
+@import 'components/service-card';
 @import 'components/team';
 @import 'components/card-teams';
 @import 'components/social';
