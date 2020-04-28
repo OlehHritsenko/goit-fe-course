@@ -2,3 +2,117 @@
     padding-top: 46px;
     padding-bottom: 86px;
 }
+
+.service__text {
+    font-size: $secondary-title-text-size;
+    font-family: "Kaushan Script";
+    color: $primary-dark-color;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+   
+.service__title {
+    font-size: $first-title-text-size;
+    font-family: "Montserrat";
+    color: $primary-dark-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 100px;
+    position: relative;
+
+    &::after {
+        display: block;
+        content: "";
+        width: 60px;
+        height: 3px;
+        background-color: $secondory-accent-color;
+        position: absolute;
+        margin-top: 32px;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.service__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+   
+.service {
+    &__card {
+        flex-basis: 380px;
+        padding-left: 80px;
+        min-height: 74px;
+        position: relative;
+        margin-bottom: 100px;
+    }
+
+    &__card:nth-child(n + 4) {
+        margin-bottom: 0;
+    }
+
+    &__card-title {
+        font-size: $first-text-size;
+        font-family: "Montserrat";
+        color: $primary-dark-color;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin: 0;
+        margin-bottom: 18px;
+        padding: 0;
+    }
+
+    &__card-text {
+        font-size: $first-text-size;
+        font-family: "Roboto";
+        color: $secondory-dark-color;
+        line-height: 1.2;
+        margin: 0;
+    }
+}
+
+.box-image {
+    &::before {
+        @include inline-block();
+        content: "";
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 0;
+        left: 20px;
+    }
+    
+    &__alarm::before {
+        background: url(../images/logo/ALARM.png);
+    }
+
+    &__linegraph::before {
+        background-image: url(../images/logo/GRAPH.png);
+    }
+
+    &__computer::before {
+        background-image: url(../images/logo/COMPUTER.png);
+    }
+
+    &__book::before {
+        background-image: url(../images/logo/BOOK.png);
+    }
+
+    &__home::before {
+        background-image: url(../images/logo/HOME.png);
+    }
+
+    &__digital::before {
+        background-image: url(../images/logo/IMAGE.png);
+    }
+}

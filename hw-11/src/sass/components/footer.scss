@@ -10,3 +10,52 @@
     padding-top: 12px;
     border-top: 1px solid $border-color;
 }
+
+.bottom__text {
+    font-size: $first-text-size;
+    font-family: "Montserrat";
+    color: $primary-dark-color;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0; 
+}
+   
+.bottom__mogo {
+    text-decoration: none;
+    color: $secondory-accent-color;
+}
+
+.bottom__form {
+    @include center-flex('end');
+}
+
+.button {
+    &__email {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        color: $shadow-color;
+        width: 230px;
+        height: 40px;
+        outline: none;
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    &__sub {
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        width: 150px;
+        height: 40px;
+        margin: 0px;
+        padding: 0px;
+        background-color: $background-color;
+        color: $primary-white-color;
+        border: 0;
+        outline: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}

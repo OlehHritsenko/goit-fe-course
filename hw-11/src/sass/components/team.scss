@@ -1,3 +1,135 @@
 .team {
     padding-bottom: 86px;
 }
+
+.section {
+    &__list-team {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card-teams {
+        @include space-between; 
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    &__team-info {
+        text-align: center;
+        width: 946px;
+        margin: 0 auto;
+        margin-bottom: 94px;
+        font-family: "Roboto";
+        font-size: 15px;
+        line-height: 1.2;
+        color: $secondory-dark-color;        
+    }
+}
+
+.card {
+    width: 380px;
+    height: 564px;
+
+    &__head {
+        width: 380px;   
+        height: 470px;
+        margin-bottom: 30px;
+    }
+
+    &__blue-background {
+        width: 100%;
+        height: 470px;
+        background-color: $background-color;
+    }
+
+    &__image {
+        display: block;
+        width: 380px;
+        height: 470px;
+        position: absolute;
+        top: 0;
+        transition: 300ms linear transform;
+    }
+
+    &__image-foreground {
+        background-image: linear-gradient(#f38181 0%, #fce38a 100%);
+        @include center-flex('all');
+        position: absolute;
+        width: 380px;
+        height: 470px;
+        top: 0;
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: 300ms;
+    }
+
+    &:hover .card__image-foreground {
+        transition-property: opacity;
+        transition-duration: 300ms;
+        opacity: 0.9;
+    }
+
+    &:hover .card__image {
+        transform: translate(-10px, -10px);
+        cursor: pointer;
+    }
+
+    &__name {
+        text-align: center;
+        font-size: $first-text-size;
+        font-family: "Montserrat";
+        color: $primary-dark-color;
+        text-transform: uppercase;
+        line-height: 1.2;
+        font-weight: 500;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    &__workname {
+        text-align: center;
+        font-size: $first-text-size;
+        font-family: "Roboto";
+        color: $secondory-dark-color;
+        font-style: italic;
+        line-height: 1.2;
+        margin: 0;
+    }
+}
+
+.social-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 227px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}  
+ 
+.socials__item {
+    width: 56px;
+    height: 56px;
+    background-color:  $first-accent-color;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 300ms linear;
+
+    &:hover,
+    &:focus {
+      background-color: $secondory-accent-color;
+    }
+
+    &:hover .icon {
+      fill: $primary-white-color;
+    }
+}
+ 
+.icon {
+    width: 26px;
+    height: 26px;
+    fill: $secondory-accent-color;
+}
