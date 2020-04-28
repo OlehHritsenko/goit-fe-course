@@ -41,6 +41,7 @@ bower_components
 # Dependency directories
 node_modules/
 jspm_packages/
+package-lock.json
 
 # Typescript v1 declaration files
 typings/
@@ -58,13 +59,8 @@ typings/
 *.tgz
 
 # Yarn Integrity file
+yarn.lock
 .yarn-integrity
 
 # dotenv environment variables file
 .env
-
-# package-lock.json
-package-lock.json
-
-# yarn.lock
-yarn.lock

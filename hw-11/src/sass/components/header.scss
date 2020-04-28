@@ -5,6 +5,19 @@
     background-repeat: no-repeat;
     padding-top: 26px;
     padding-bottom: 230px;
+
+    &__logo {
+        @include inline-block();
+        width: 86px;
+        height: 23px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    &__menu {
+        display: flex;
+        margin-bottom: 170px;
+    }
 }
  
 @media (min-resolution: 192dpi) {
@@ -13,28 +26,13 @@
     }
 }
 
-.header__logo {
-    @include inline-block();
-    width: 86px;
-    height: 23px;
-    margin: 0;
-    padding: 0;
-}
-
-.header__menu {
-    display: flex;
-    margin-bottom: 170px;
-}
- 
 .menu {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
     margin-top: 26px;
-}
-   
-.menu {
+
     &__list {
         display: flex;
         justify-content: flex-end;
@@ -47,50 +45,50 @@
     &__item:not(:last-child) {
         margin-right: 50px;
     }
-}
 
-.menu__link {
-    position: relative;
-    font-family: "Montserrat", sans-serif;
-    font-size: $first-text-size;
-    font-weight: 400;
-    color: $primary-white-color;
-    text-transform: uppercase;
-    text-decoration: none;
-    line-height: 1.2;
-    transition: color 300ms linear;
-
-    &::after {
-        display: block;
-        content: "";
-        background-color: $first-accent-color;
-        position: absolute;
-        margin-top: 10px;
-        width: 50px;
-        height: 3px;
-        left: 50%;
-        transform: translateX(-50%);
-        transition-property: opacity;
-        transition-duration: 300ms;
-        opacity: 0;
+    &__link {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        font-size: $first-text-size;
+        font-weight: 400;
+        color: $primary-white-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 1.2;
+        transition: color 300ms linear;
+    
+        &::after {
+            display: block;
+            content: "";
+            background-color: $first-accent-color;
+            position: absolute;
+            margin-top: 10px;
+            width: 50px;
+            height: 3px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition-property: opacity;
+            transition-duration: 300ms;
+            opacity: 0;
+        }
+    
+        &:hover,
+        &:focus {
+          color: $first-accent-color;
+        }
+    
+        &:hover::after,
+        &:focus::after {
+          transition-property: opacity;
+          transition-duration: 300ms;
+          opacity: 1;
+        }
     }
-
-    &:hover,
-    &:focus {
-      color: $first-accent-color;
+    
+    &__button {
+        background-color: transparent;
+        border: 0;
     }
-
-    &:hover::after,
-    &:focus::after {
-      transition-property: opacity;
-      transition-duration: 300ms;
-      opacity: 1;
-    }
-}
-
-.menu__button {
-    background-color: transparent;
-    border: 0;
 }
 
 #svg {
@@ -157,22 +155,22 @@
         margin: 0 auto;
         margin-bottom: 120px;
     }
+
+    &__btn {
+        @include inline-block;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-size: $first-text-size;
+        font-weight: 700;
+        color: $primary-white-color;
+        padding: 10px 30px;
+        width: max-content;
+        background-color: transparent;
+        border: #ffffff solid 3px;
+        cursor: pointer;
+    }
 }
 
 .buttton {
     @extend %button;
-}
-
-.main__btn {
-    @include inline-block;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    font-size: $first-text-size;
-    font-weight: 700;
-    color: $primary-white-color;
-    padding: 10px 30px;
-    width: max-content;
-    background-color: transparent;
-    border: #ffffff solid 3px;
-    cursor: pointer;
 }

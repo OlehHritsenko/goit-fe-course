@@ -1,54 +1,52 @@
 .service {
     padding-top: 46px;
     padding-bottom: 86px;
-}
 
-.service__text {
-    font-size: $secondary-title-text-size;
-    font-family: "Kaushan Script";
-    color: $primary-dark-color;
-    line-height: 1.2;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 10px;
-}
-   
-.service__title {
-    font-size: $first-title-text-size;
-    font-family: "Montserrat";
-    color: $primary-dark-color;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.6;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 100px;
-    position: relative;
-
-    &::after {
-        display: block;
-        content: "";
-        width: 60px;
-        height: 3px;
-        background-color: $secondory-accent-color;
-        position: absolute;
-        margin-top: 32px;
-        left: 50%;
-        right: 50%;
-        transform: translateX(-50%);
+    &__text {
+        font-size: $secondary-title-text-size;
+        font-family: "Kaushan Script";
+        color: $primary-dark-color;
+        line-height: 1.2;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 10px;
     }
-}
 
-.service__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-   
-.service {
+    &__title {
+        font-size: $first-title-text-size;
+        font-family: "Montserrat";
+        color: $primary-dark-color;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.6;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 100px;
+        position: relative;
+    
+        &::after {
+            display: block;
+            content: "";
+            width: 60px;
+            height: 3px;
+            background-color: $secondory-accent-color;
+            position: absolute;
+            margin-top: 32px;
+            left: 50%;
+            right: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
     &__card {
         flex-basis: 380px;
         padding-left: 80px;

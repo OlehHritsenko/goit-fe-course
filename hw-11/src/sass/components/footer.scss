@@ -2,32 +2,32 @@
     @include center-flex('');
     padding: 0;
     padding-bottom: 12px;
-}
-   
-.bottom__wrapper {
-    @include space-between('ver');
-    width: 1200px;
-    padding-top: 12px;
-    border-top: 1px solid $border-color;
-}
 
-.bottom__text {
-    font-size: $first-text-size;
-    font-family: "Montserrat";
-    color: $primary-dark-color;
-    font-weight: 500;
-    line-height: 1.2;
-    margin: 0;
-    padding: 0; 
-}
-   
-.bottom__mogo {
-    text-decoration: none;
-    color: $secondory-accent-color;
-}
-
-.bottom__form {
-    @include center-flex('end');
+    &__wrapper {
+        @include space-between('ver');
+        width: 1200px;
+        padding-top: 12px;
+        border-top: 1px solid $border-color;
+    }
+    
+    &__text {
+        font-size: $first-text-size;
+        font-family: "Montserrat";
+        color: $primary-dark-color;
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0; 
+    }
+       
+    &__mogo {
+        text-decoration: none;
+        color: $secondory-accent-color;
+    }
+    
+    &__form {
+        @include center-flex('end');
+    }
 }
 
 .button {
