@@ -1,5 +1,5 @@
 .problems {
-    background-image: url(../images/fon/second_backfon.png);
+    background-image: url('../images/fon/second_backfon.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -74,7 +74,7 @@
 
 @media(min-width: 768px) and (max-width: 1279px) {
     .problems {
-        background-image: url(../../images/fon/BG-dark-problems-tab.jpg);
+        background-image: url('../images/fon/BG-dark-problems-tab.jpg');
 
         &__title {
             font-size: 26px;
@@ -102,7 +102,7 @@
 
 @media(min-width: 1280px) and (max-width: 1679px) {
     .problems {
-        background-image: url(../../images/fon/BG-dark-problems-1280.jpg);
+        background-image: url('../images/fon/BG-dark-problems-1280.jpg');
 
         &__title {
             font-size: 42px;
@@ -144,7 +144,7 @@
 
 @media(min-width: 1680px) {
     .problems {
-        background-image: url(../../images/fon/BG-dark-problems-1680.jpg);
+        background-image: url('../images/fon/BG-dark-problems-1680.jpg');
 
         &__title {
             font-size: 46px;
