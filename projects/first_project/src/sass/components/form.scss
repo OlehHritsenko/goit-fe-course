@@ -1,7 +1,7 @@
 .form {
     padding-top: 56px;
     padding-bottom: 56px;
-    background-image: url('../images/fon/form_img.jpg');
+    background-image: url(../images/fon/form_img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -91,7 +91,7 @@
 
 @media(min-width: 768px) and (max-width: 1279px) {
     .form {
-        background-image: url('../images/fon/form_img-tab.jpg');
+        background-image: url(../images/fon/form_img-tab.jpg);
 
         &__title {
             font-size: 22px;
@@ -117,7 +117,7 @@
 
 @media(min-width: 1280px) and (max-width: 1679px) {
     .form {
-        background-image: url('../images/fon/form_img-1280.jpg');
+        background-image: url(../images/fon/form_img-1280.jpg);
         padding-top: 84px;
         padding-bottom: 84px;
 
@@ -157,7 +157,7 @@
 
 @media(min-width: 1680px) {
     .form {
-        background-image: url('../images/fon/form_img-1680.jpg');
+        background-image: url(../images/fon/form_img-1680.jpg);
         padding-top: 84px;
         padding-bottom: 84px;
 
