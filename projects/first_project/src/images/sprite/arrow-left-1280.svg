@@ -1,0 +1,16 @@
+<svg id="arrow_short_копия" data-name="arrow short копия" xmlns="http://www.w3.org/2000/svg" width="25" height="14" viewBox="0 0 25 14">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #ff6b08;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="3" y="6" width="22" height="2"/>
+  <path id="Rectangle_1_copy_2" data-name="Rectangle 1 copy 2" class="cls-2" d="M66.349,5609.99L58,5603.36l1.633-1.35,8.349,6.63Z" transform="translate(-58 -5596)"/>
+  <path id="Rectangle_1_copy_3" data-name="Rectangle 1 copy 3" class="cls-2" d="M66.349,5596.01L58,5602.64l1.633,1.35,8.349-6.63Z" transform="translate(-58 -5596)"/>
+</svg>

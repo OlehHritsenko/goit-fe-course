@@ -1,0 +1,383 @@
+.advantages {
+    padding-top: 56px;
+    padding-bottom: 50px;
+    background-image: url(../images/fon/bg-advantages.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center bottom 300px;
+}
+
+.main {
+    position: relative;
+
+    &__text {
+        margin-bottom: 36px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-family: "Montserrat";
+        color: #18191d;
+        font-weight: bold;
+        line-height: 1.45;
+        text-align: left;
+        width: 263px;
+        margin: 0;
+        margin-bottom: 26px;
+    }
+
+    &__text1 {
+        font-size: 15px;
+        font-family: "Montserrat";
+        color: #b9b9b9;
+        line-height: 1.355;
+        margin: 0;
+    }
+
+    &__text2 {
+        font-size: 15px;
+        font-weight: bold;
+        font-family: "Montserrat";
+        color: #18191d;
+        line-height: 1.355;
+        margin: 0;
+    }
+
+    &__text3 {
+        font-size: 15px;
+        font-weight: bold;
+        font-family: "Montserrat";
+        color: #ff6b08;
+        line-height: 1.355;
+        margin: 0;
+        margin-bottom: 36px;
+    }
+
+    &__btn {
+        font-size: 11px;
+        font-family: "Tahoma";
+        color: #ffffff;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        letter-spacing: 0.9px;
+        text-align: center;
+        padding: 18px;
+        border: none;
+        background-color: #ff6b08;
+    }
+
+    &__btn:hover {
+        background-color: #d35526;
+    }
+
+    &__picture {
+        margin-bottom: 84px;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        padding-left: 80px;
+    }
+}
+
+.main__item:not(:last-child) {
+    margin-bottom: 26px;
+}
+
+#svg {
+    display: none;
+}
+
+.item {
+    position: relative;
+
+    &__text {
+        font-size: 13px;
+        font-family: "Montserrat";
+        color: #18191d;
+        font-weight: bold;
+        line-height: 1.538;
+        width: min-content;
+        margin: 0;
+    }
+    
+    &__card {
+        width: 58px;
+        height: 58px;
+        position: absolute;
+        left: 0;
+        border: 2px solid #ff6b08;
+    }
+
+    &__card::after {
+        position: absolute;
+        display: block;
+        content: ""; 
+        width: 4px;
+        height: 36px;
+        background-color: #ffffff;
+        top: 50%;
+        right: -3px;
+        transform: translateY(-50%);
+    }
+}
+
+.svg {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 30px;
+    height: 36px;
+}
+
+@media(min-width: 768px) and (max-width: 1279px) {
+    .advantages {
+        background-image: url(../images/fon/bg-advantages-tab.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center bottom 100px;
+    }
+
+    .main {
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 112px;
+        }
+
+        &__title {
+            font-size: 26px;
+            font-weight: 800;
+            width: 276px;
+        }
+
+        &__text {
+            margin-bottom: 0;
+        }
+
+        &__picture {
+            margin-bottom: 0;
+        }
+
+        &__list {
+            display: flex;
+        }
+
+        &__item:not(:last-child) {
+            margin: 0;
+            margin-right: 70px;
+        }
+    }
+}
+
+@media(min-width: 1280px) and (max-width: 1679px) {
+    .advantages {
+        background-image: url(../images/fon/bg-advantages-1280.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center bottom 144px;
+        padding-bottom: 88px;
+    }
+
+    .main {
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 128px;
+        }
+
+        &__title {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            width: 554px;
+        }
+
+        &__text {
+            margin-bottom: 0;
+        }
+
+        &__text1 {
+            font-size: 18px;
+        }
+
+        &__text2 {
+            font-size: 18px;
+            display: inline;
+        }
+
+        &__text3 {
+            font-size: 18px;
+            display: inline;
+        }
+
+        &__picture {
+            margin-bottom: 0;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item:not(:last-child) {
+            margin: 0;
+            margin-right: 56px;
+        }
+
+        &__btn {
+            font-size: 14px;
+            width: 300px;
+            height: 68px;
+            margin-top: 65px;
+        }
+    }
+
+    .main__list {
+        margin-bottom: 28px;
+    }
+
+    .main__item {
+        position: relative;
+    }
+
+    .item__card {
+        width: 103px;
+        height: 101px;
+        position: absolute;
+        top: -20px;
+    }
+
+    .item__card::after {
+        height: 72px;
+    }
+
+    .item__text {
+        font-size: 18px;
+        width: 322px;
+        position: inherit;
+    }
+
+    .icon-item {
+        width: 56px;
+        height: 64px;
+    }
+
+    .svg {
+        top: 28px;
+        left: 28px;
+    }
+}
+
+@media(min-width: 1680px) {
+    .advantages {
+        background-image: url(../images/fon/bg-advantages-1680.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center bottom 202px;
+        padding-bottom: 88px;
+    }
+
+    .main {
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 128px;
+        }
+
+        &__title {
+            font-size: 58px;
+            font-weight: 900;
+            line-height: 1.2;
+            width: 606px;
+        }
+
+        &__text {
+            margin-bottom: 0;
+        }
+
+        &__text1 {
+            font-size: 21px;
+        }
+
+        &__text2 {
+            font-size: 21px;
+            display: inline;
+        }
+
+        &__text3 {
+            font-size: 21px;
+            display: inline;
+        }
+
+        &__picture {
+            margin-bottom: 0;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item:not(:last-child) {
+            margin: 0;
+            margin-right: 68px;
+        }
+
+        &__btn {
+            font-size: 14px;
+            width: 350px;
+            height: 68px;
+            margin-top: 65px;
+        }
+    }
+
+    .main__picture {
+        transform: translateX(108px);
+    }
+
+    .main__list {
+        margin-bottom: 28px;
+    }
+
+    .main__item {
+        position: relative;
+    }
+
+    .item__card {
+        width: 103px;
+        height: 101px;
+        position: absolute;
+        top: -20px;
+    }
+
+    .item__card::after {
+        height: 72px;
+    }
+
+    .item__text {
+        font-size: 18px;
+        width: 322px;
+        position: inherit;
+    }
+
+    .icon-item {
+        width: 56px;
+        height: 64px;
+    }
+
+    .svg {
+        top: 28px;
+        left: 28px;
+    }
+}

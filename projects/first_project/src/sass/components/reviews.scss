@@ -1,0 +1,339 @@
+.reviews {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__title {
+        font-size: 20px;
+        font-family: "Montserrat";
+        color: rgb(17, 21, 23);
+        font-weight: bold;
+        line-height: 1.327;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 4px 7px 35px 11px rgba(29,29,27,.09);
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+    }
+
+    &__info {
+        text-align: center;
+    }
+
+    &__card-name {
+        font-size: 13px;
+        font-family: "Montserrat";
+        color: #ff6b08;
+        font-weight: bold;
+        line-height: 1.6;
+        margin: 0;
+        margin-bottom: 8px;
+    }
+
+    &__card-text {
+        font-size: 11px;
+        font-family: "Montserrat";
+        color: #858585;
+        line-height: 1.515;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    &__link-text {
+        font-size: 11px;
+        font-family: "Montserrat";
+        color: #18191d;
+        font-weight: bold;
+        line-height: 1.818;
+        letter-spacing: 0.6px;
+        margin: 0;
+    }
+
+    &__link-text a {
+        color: #ff6b08;
+    }
+
+    &__link-text span {
+        display: none;
+    }
+}
+
+.card-photo {
+    width: 84px;
+    height: 84px;
+    margin-bottom: 20px;
+}
+
+.vk {
+    width: 30px;
+    height: 16px;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+
+    &__left {
+        position: absolute;
+        bottom: 22px;
+        left: 0;
+        cursor: pointer;
+    }
+
+    &__right {
+        position: absolute;
+        bottom: 22px;
+        right: 0;
+        cursor: pointer;
+    }
+}
+
+.small {
+    display: flex;
+}
+
+.small__img {
+    width: 54px;
+    height: 54px;
+}
+
+.small__img:not(:last-of-type) {
+    margin-right: 12px;
+}
+
+@media(max-width: 767px) {
+    .none {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1279px) {
+    .reviews {
+        &__card {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 40px;
+            padding-left: 34px;
+            padding-right: 56px;
+            padding-bottom: 40px;
+        }
+
+        &__img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__info {
+            text-align: left;
+            width: 464px;
+        }
+
+        &__card-name {
+            font-size: 18px;
+        }
+
+        &__link-text span {
+            display: contents;
+        }
+    }
+
+    .small__img:not(:last-of-type) {
+        margin-right: 22px;
+    }
+
+    .small__img:hover {
+        border: 2px solid #ff6b08;
+        border-radius: 50%;
+        transition: border 0.2s ease-in-out;
+    }
+
+    .carousel__right {
+        right: -15px;
+        bottom: 200px;
+    }
+
+    .carousel__left {
+        left: -15px;
+        bottom: 200px;
+    }
+}
+
+@media(min-width: 1280px) and (max-width: 1679px) {
+    .reviews {
+        &__title {
+            font-size: 42px;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 1068px;
+            height: auto;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 44px;
+            padding-top: 42px;
+            padding-left: 86px;
+            padding-right: 106px;
+            padding-bottom: 42px;
+        }
+
+        &__img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__info {
+            text-align: left;
+            width: auto;
+        }
+
+        &__card-name {
+            font-size: 25px;
+        }
+
+        &__card-text {
+            font-size: 12px;
+            width: 450px;
+        }
+
+        &__link-text {
+            font-size: 16px;
+            width: 712px;
+        }
+
+        &__link-text span {
+            display: contents;
+            font-size: 16px;
+        }
+    }
+
+    .card-photo {
+        width: 145px;
+        height: auto;
+    }
+
+    .small__img:not(:last-of-type) {
+        margin-right: 22px;
+    }
+
+    .small__img:hover {
+        border: 2px solid #ff6b08;
+        border-radius: 50%;
+        transition: border 0.2s ease-in-out;
+    }
+
+    .carousel__right {
+        width: 25px;
+        height: 14px;
+        right: 0;
+        bottom: 230px;
+    }
+
+    .carousel__left {
+        width: 25px;
+        height: 14px;
+        left: 0;
+        bottom: 230px;
+    }
+}
+
+@media(min-width: 1680px) {
+    .reviews {
+        &__title {
+            font-size: 46px;
+            margin-bottom: 32px;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 1068px;
+            height: auto;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 44px;
+            padding-top: 42px;
+            padding-left: 86px;
+            padding-right: 106px;
+            padding-bottom: 42px;
+        }
+
+        &__img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__info {
+            text-align: left;
+            width: auto;
+        }
+
+        &__card-name {
+            font-size: 25px;
+        }
+
+        &__card-text {
+            font-size: 12px;
+            width: 450px;
+        }
+
+        &__link-text {
+            font-size: 16px;
+            width: 712px;
+        }
+
+        &__link-text span {
+            display: contents;
+            font-size: 16px;
+        }
+    }
+
+    .card-photo {
+        width: 145px;
+        height: auto;
+    }
+
+    .small__img:not(:last-of-type) {
+        margin-right: 22px;
+    }
+
+    .small__img:hover {
+        border: 2px solid #ff6b08;
+        border-radius: 50%;
+        transition: border 0.2s ease-in-out;
+    }
+
+    .carousel__right {
+        width: 25px;
+        height: 14px;
+        right: 72px;
+        bottom: 230px;
+    }
+
+    .carousel__left {
+        width: 25px;
+        height: 14px;
+        left: 72px;
+        bottom: 230px;
+    }
+}

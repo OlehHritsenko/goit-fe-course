@@ -1,0 +1,299 @@
+.program {
+    background-color: #111517;
+    padding-top: 50px;
+    padding-bottom: 42px;
+    position: relative;
+
+    &__title {
+        font-size: 20px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1.65;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 36px;
+    }
+
+    &__list {
+        list-style: none;
+        width: 150px;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    &__item {
+        font-size: 15px;
+        font-family: "Montserrat";
+        color: #ffffff;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.944;
+        letter-spacing: 1.5px;
+        padding-left: 36px;
+        position: relative;
+    }
+
+    &__item::before {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        background-color: #ff6b08;
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+    }
+
+    &__item:not(:last-child)::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 17px;
+        left: 4px;
+        height: 100%;
+        border-left: 2px solid #b9b9b9;
+    }
+
+    &__item:not(:last-child) {
+        padding-bottom: 30px;
+    }
+
+    &__image {
+        position: absolute;
+        transform: translate(160px, -30px);
+    }
+}
+
+.last-item::before {    
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #ff6b08;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.semester {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &__subject span {
+        display: block;
+        font-size: 13px;
+        font-family: "Montserrat";
+        color: #ff6b08;
+        line-height: 2.244;
+        text-transform: none;
+        padding-left: 40px;
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__subject span::before {
+        content: "";
+        display: block;
+        background-color: #ff6b08;
+        width: 25px;
+        height: 2px;
+        position: absolute;
+        top: 14px;
+        left: 0;
+    }
+
+    &__occupation-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;        
+    }
+
+    &__occupation {
+        font-size: 11px;
+        font-family: "Montserrat";
+        color: rgba(133, 133, 133, 0.502);
+        line-height: 1.818;
+        font-weight: 500;
+        text-transform: none;
+        letter-spacing: 0.6px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1279px) {
+    .program {
+        padding-top: 70px;
+        padding-bottom: 110px;
+
+        &__title {
+            font-size: 26px;
+            text-align: left;
+        }
+
+        &__list {
+            padding: 0;
+            margin-left: 90px;
+            width: auto;
+        }
+
+        &__image {
+            transform: translate(80%, -60%);
+        }
+    }
+
+    .semester {
+        display: flex;
+
+        &__subject:not(:last-child) {
+            margin-right: 54px;
+        }
+    }
+}
+
+@media(min-width: 1280px) and (max-width: 1679px) {
+    .program__item:not(:last-child) {
+        padding-bottom: 0;
+    }
+
+    .program__item:not(:last-child)::after {
+        display: none;
+    }
+
+    .program::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100vw;
+        border-top: 2px solid #b9b9b9;
+        top: 159px;
+    }
+
+    .program {
+        position: relative;
+
+        &__title {
+            font-size: 42px;
+            text-align: left;
+        }
+
+        &__list {
+            width: auto;
+        }
+
+        &__item {
+            font-size: 19px;
+            padding-left: 0;
+            width: 242px;
+        }
+
+        &__item::before {
+            top: -42px;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 42px;
+        }
+
+        &__image {
+            transform: translate(-16%, -37%);
+        }
+    }
+
+    .semester {
+        &__subject span {
+            font-size: 18px;
+        }
+
+        &__occupation {
+            font-size: 18px;
+        }
+    }
+}
+
+@media(min-width: 1680px) {
+    .program__item:not(:last-child) {
+        padding-bottom: 0;
+    }
+
+    .program__item:not(:last-child)::after {
+        display: none;
+    }
+
+    .program::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100vw;
+        border-top: 2px solid #b9b9b9;
+        top: 272px;
+    }
+
+    .program {
+        position: relative;
+        padding-top: 130px;
+        padding-bottom: 86px;
+
+        &__title {
+            font-size: 46px;
+            text-align: left;
+            margin-bottom: 60px;
+        }
+
+        &__list {
+            width: auto;
+        }
+
+        &__item {
+            font-size: 21px;
+            padding-left: 0;
+            width: 266px;
+        }
+
+        &__item:not(:last-child) {
+            margin-right: 35px;
+        }
+
+        &__item::first-letter {
+            font-size: 29px;
+        }
+
+        &__item::before {
+            width: 20px;
+            height: 20px;
+            top: -62px;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 60px;
+        }
+
+        &__image {
+            transform: translate(-28%, -40%);
+        }
+    }
+
+    .semester {
+        &__subject span {
+            font-size: 21px;
+        }
+
+        &__subject span::before {
+            top: 22px;
+        }
+
+        &__occupation {
+            font-size: 19px;
+        }
+    }
+
+    .last-item::before {
+        margin-top: 32px;
+        margin-bottom: 34px;
+    }
+}

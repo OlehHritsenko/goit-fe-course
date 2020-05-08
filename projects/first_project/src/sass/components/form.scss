@@ -1,0 +1,196 @@
+.form {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    background-image: url(../../images/fon/form_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: #ffffff;
+        font-weight: bold;
+        line-height: 1.86;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 22px;
+    }
+
+    &__title span {
+        color: #ff6b08;
+    }
+
+    &__text {
+        font-size: 11px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1.4;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    &__text span {
+        color: #ff6b08;
+    }
+
+    &__registration {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__registration input[type="name"]:invalid,
+    &__registration input[type="tel"]:invalid {
+        outline-color: #ff0000;
+    }
+
+    &__name {
+        background-color: transparent;
+        width: 280px;
+        height: 50px;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 600;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__tel {
+        background-color: transparent;
+        width: 280px;
+        height: 50px;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 600;
+        padding-left: 20px;
+        margin-bottom: 56px;
+    }
+
+    &__btn {
+        font-size: 11px;
+        font-family: "Tahoma";
+        color: #ffffff;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        letter-spacing: 0.9px;
+        text-align: center;
+        padding: 18px;
+        border: none;
+        background-color: #ff6b08;
+        cursor: pointer;
+    }
+
+    &__btn:hover {
+        background-color: #d35526;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1279px) {
+    .form {
+        background-image: url(../../images/fon/form_img-tab.jpg);
+
+        &__title {
+            font-size: 22px;
+            width: 556px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__text {
+            font-size: 15px;
+            font-weight: 500;
+            width: 440px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__name,
+        &__tel {
+            width: 402px;
+        }
+    }
+}
+
+@media(min-width: 1280px) and (max-width: 1679px) {
+    .form {
+        background-image: url(../../images/fon/form_img-1280.jpg);
+        padding-top: 84px;
+        padding-bottom: 84px;
+
+        &__title {
+            font-size: 38px;
+            line-height: 1.4;
+            width: 940px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+        }
+
+        &__text {
+            font-size: 18px;
+            font-weight: 500;
+            width: 490px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+        }
+
+        &__name,
+        &__tel {
+            font-size: 20px;
+            width: 622px;
+            height: 70px;
+
+        }
+
+        &__btn {
+            font-size: 14px;
+            width: 354px;
+            height: 74px;
+        }
+    }
+}
+
+@media(min-width: 1680px) {
+    .form {
+        background-image: url(../../images/fon/form_img-1680.jpg);
+        padding-top: 84px;
+        padding-bottom: 84px;
+
+        &__title {
+            font-size: 38px;
+            line-height: 1.4;
+            width: 940px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+        }
+
+        &__text {
+            font-size: 25px;
+            font-weight: 500;
+            width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+        }
+
+        &__name,
+        &__tel {
+            font-size: 20px;
+            width: 622px;
+            height: 70px;
+
+        }
+
+        &__btn {
+            font-size: 14px;
+            width: 354px;
+            height: 74px;
+        }
+    }
+}

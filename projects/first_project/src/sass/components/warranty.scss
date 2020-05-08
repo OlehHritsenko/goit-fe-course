@@ -1,0 +1,150 @@
+.warranty {
+    &__title {
+        font-size: 20px;
+        font-family: "Montserrat";
+        color: #111517;
+        font-weight: bold;
+        line-height: 1.6;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 22px;
+    }
+
+    &__fon {
+        background-color: #f1f1f1;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 34px;
+    }
+
+    &__item:not(:last-child) {
+        padding-bottom: 24px;
+    }
+
+    &__item:not(:last-child)::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        border-left: 1px dotted #858585;
+        height: 100%;
+        top: 6px;
+        left: 6px;
+    }
+
+    &__text {
+        font-size: 11px;
+        font-family: "Montserrat";
+        font-weight: 500;
+        color: #18191d;
+        line-height: 1.818;
+        margin: 0;
+    }
+
+    &__text span {
+        color: #ff6b08;
+    }
+}
+
+.fire {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media(min-width: 768px) and (max-width: 1279px) {
+    .warranty {
+        &__title {
+            font-size: 26px;
+        }
+
+        &__fon {
+            width: 688px;
+            margin: 0 auto;
+        }
+
+        &__list {
+            padding-top: 30px;
+            padding-right: 50px;
+            padding-bottom: 30px;
+            padding-left: 60px;
+        }
+    }
+}
+
+@media(min-width: 1280px) and (max-width: 1679px) {
+    .warranty {
+        &__title {
+            font-size: 42px;
+        }
+
+        &__fon {
+            width: 1210px;
+            margin: 0 auto;
+        }
+
+        &__list {
+            padding-top: 50px;
+            padding-right: 138px;
+            padding-bottom: 50px;
+            padding-left: 128px;
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+    }
+
+    .fire {
+        width: 20px;
+        height: auto;
+        left: -3px;
+    }
+}
+
+@media(min-width: 1680px) {
+    .warranty {
+        &__title {
+            font-size: 42px;
+        }
+
+        &__fon {
+            width: 1344px;
+            margin: 0 auto;
+        }
+
+        &__list {
+            padding-top: 50px;
+            padding-right: 138px;
+            padding-bottom: 50px;
+            padding-left: 128px;
+        }
+
+        &__item {
+            padding-left: 44px;
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+
+        &__text .block {
+            display: block;
+        }
+    }
+
+    .fire {
+        width: 20px;
+        height: auto;
+        left: -3px;
+    }
+}

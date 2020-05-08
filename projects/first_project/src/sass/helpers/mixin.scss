@@ -1,0 +1,34 @@
+@mixin center-flex($type: 'all') {
+    display: flex;
+
+    @if $type== 'all' {
+        justify-content: center;
+        align-items: center;
+    } @else if $type== 'hor' {
+        justify-content: center;
+    } @else if $type== 'ver' {
+        align-items: center;
+    } @else if $type== 'end' {
+        justify-content: flex-end;
+    } @else if $type== 'col' {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@mixin space-between($type: 'all') {
+    display: flex;
+    justify-content: space-between;
+
+    @if $type== 'ver' {
+        align-items: center;
+    }
+
+    @if $type== 'end' {
+        align-items: flex-end;
+    }
+}
+
+@mixin inline-block($type: 'all') {
+    display: inline-block;
+}

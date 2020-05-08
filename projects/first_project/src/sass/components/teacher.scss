@@ -1,0 +1,247 @@
+.teacher {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__title {
+        font-size: 20px;
+        font-family: "Montserrat";
+        color: #111517;
+        font-weight: 800;
+        line-height: 1.5;
+        letter-spacing: 0.7px;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+
+    &__name {
+        font-size: 16px;
+        font-family: "Montserrat";
+        color: #111517;
+        font-weight: 800;
+        line-height: 1.6;
+        letter-spacing: 0.6px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #b9b9b9;
+        margin: 0;
+        margin-top: 24px;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        position: relative;
+    }
+
+    &__list::after {
+        content: "";
+        display: block;
+        background-color: #ff6b08;
+        width: 25px;
+        height: 2px;
+        position: absolute;
+        left: 16px;
+        bottom: 0;
+    }
+
+    &__item {
+        padding-left: 34px;
+        position: relative;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 18px;
+    }
+
+    &__merit {
+        font-size: 13px;
+        font-family: "Montserrat";
+        color: #111517;
+        font-weight: 700;
+        line-height: 1.6;
+        letter-spacing: 0.7px;
+        margin: 0;
+    }
+
+    &__block {
+        padding: 18px;
+    }
+
+    &__text {
+        font-size: 11px;
+        font-family: "Montserrat";
+        color: #858585;
+        line-height: 1.818;
+        margin: 0;
+    }
+
+    &__text:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        font-size: 11px;
+        font-family: "Montserrat";
+        color: #ff6b08;
+    }
+}
+
+.check {
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+@media(min-width: 768px) and (max-width: 1279px) {
+    .teacher {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__card {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__title {
+            font-size: 26px;
+        }
+
+        &__name {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        &__info {
+            width: 400px;
+        }
+
+        &__list {
+            width: 380px;
+        }
+
+        &__block {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__list::after {
+            left: 0;
+        }
+    }
+}
+
+@media(min-width: 1280px) and (max-width: 1679px) {
+    .teacher {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        &__item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        &__card {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__title {
+            font-size: 42px;
+        }
+
+        &__name {
+            font-size: 29px;
+            margin: 0;
+            margin-bottom: 30px;
+        }
+
+        &__merit {
+            font-size: 16px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__link {
+            font-size: 16px;
+        }
+
+        &__info {
+            width: 608px;
+        }
+
+        &__list {
+            width: 522px;
+        }
+
+        &__block {
+            width: 632px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__list::after {
+            left: 0;
+        }
+    }
+}
+
+@media(min-width: 1680px) {
+    .teacher {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        &__item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        &__card {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__title {
+            font-size: 46px;
+            margin-bottom: 82px;
+        }
+
+        &__name {
+            font-size: 30px;
+            margin: 0;
+            margin-bottom: 30px;
+        }
+
+        &__merit {
+            font-size: 16px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__link {
+            font-size: 16px;
+        }
+
+        &__info {
+            width: 668px;
+            margin-right: 100px;
+        }
+
+        &__list {
+            width: 522px;
+        }
+
+        &__block {
+            width: 632px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__list::after {
+            left: 0;
+        }
+    }
+}
