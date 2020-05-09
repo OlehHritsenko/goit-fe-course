@@ -4,8 +4,8 @@
 
     &__title {
         font-size: 20px;
-        font-family: "Montserrat";
-        color: #111517;
+        font-family: $main-font-stack;
+        color: $background-color;
         font-weight: 800;
         line-height: 1.5;
         letter-spacing: 0.7px;
@@ -15,8 +15,8 @@
 
     &__name {
         font-size: 16px;
-        font-family: "Montserrat";
-        color: #111517;
+        font-family: $main-font-stack;
+        color: $background-color;
         font-weight: 800;
         line-height: 1.6;
         letter-spacing: 0.6px;
@@ -38,7 +38,7 @@
     &__list::after {
         content: "";
         display: block;
-        background-color: #ff6b08;
+        background-color: $first-accent-color;
         width: 25px;
         height: 2px;
         position: absolute;
@@ -57,8 +57,8 @@
 
     &__merit {
         font-size: 13px;
-        font-family: "Montserrat";
-        color: #111517;
+        font-family: $main-font-stack;
+        color: $background-color;
         font-weight: 700;
         line-height: 1.6;
         letter-spacing: 0.7px;
@@ -71,8 +71,8 @@
 
     &__text {
         font-size: 11px;
-        font-family: "Montserrat";
-        color: #858585;
+        font-family: $main-font-stack;
+        color: $little-text-color;
         line-height: 1.818;
         margin: 0;
     }
@@ -83,8 +83,8 @@
 
     &__link {
         font-size: 11px;
-        font-family: "Montserrat";
-        color: #ff6b08;
+        font-family: $main-font-stack;
+        color: $first-accent-color;
     }
 }
 

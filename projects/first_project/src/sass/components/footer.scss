@@ -8,9 +8,10 @@
     }
 
     &__tel {
+        display: flex;
         font-size: 18px;
-        font-family: "Montserrat";
-        color: rgb(17, 21, 23);
+        font-family: $main-font-stack;
+        color: $background-color;
         font-weight: bold;
         line-height: 1.2;
         text-decoration: none;
@@ -29,18 +30,24 @@
     }
 
     &__fon {
-        background-color: #111517;
+        background-color: $background-color;
         padding: 30px 0;
     }
 
     &__copyright {
         font-size: 11px;
-        font-family: "Montserrat";
-        color: rgba(253, 254, 254, 0.42);
+        font-family: $main-font-stack;
+        color: $secondory-dark-color;
         line-height: 1.2;
         padding: 0;
         margin: 0;
     }
+}
+
+.instagram {
+    display: inline-flex;
+    width: fit-content;
+    height: 100%;
 }
 
 @media(min-width: 768px) and (max-width: 1279px) {
@@ -71,7 +78,7 @@
             display: inline-block;
             width: 1px;
             height: 29px;
-            background-color: #e0e0e0;
+            background-color: $secondary-background-color;
             margin-right: 30px;
         }
     }
@@ -118,7 +125,7 @@
             display: inline-block;
             width: 1px;
             height: 29px;
-            background-color: #e0e0e0;
+            background-color: $secondary-background-color;
             margin-right: 30px;
         }
     }
@@ -127,6 +134,11 @@
         display: flex;
         align-items: center;
         margin-bottom: 54px;
+    }
+
+    .icon-tel {
+        width: 32px;
+        height: 32px;
     }
 }
 
@@ -172,5 +184,10 @@
         display: flex;
         align-items: center;
         margin-bottom: 54px;
+    }
+
+    .icon-tel {
+        width: 32px;
+        height: 32px;
     }
 }

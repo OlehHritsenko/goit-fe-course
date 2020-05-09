@@ -7,8 +7,8 @@
 
     &__title {
         font-size: 14px;
-        font-family: "Montserrat";
-        color: #ffffff;
+        font-family: $main-font-stack;
+        color: $primary-white-color;
         font-weight: bold;
         line-height: 1.86;
         text-align: center;
@@ -17,13 +17,13 @@
     }
 
     &__title span {
-        color: #ff6b08;
+        color: $secondory-accent-color;
     }
 
     &__text {
         font-size: 11px;
-        font-family: "Montserrat";
-        color: rgb(255, 255, 255);
+        font-family: $main-font-stack;
+        color: $primary-white-color;
         font-weight: bold;
         line-height: 1.4;
         text-align: center;
@@ -32,7 +32,7 @@
     }
 
     &__text span {
-        color: #ff6b08;
+        color: $secondory-accent-color;
     }
 
     &__registration {
@@ -51,7 +51,7 @@
         background-color: transparent;
         width: 280px;
         height: 50px;
-        color: #ffffff;
+        color: $primary-white-color;
         font-size: 13px;
         font-weight: 600;
         padding-left: 20px;
@@ -62,7 +62,7 @@
         background-color: transparent;
         width: 280px;
         height: 50px;
-        color: #ffffff;
+        color:$primary-white-color;
         font-size: 13px;
         font-weight: 600;
         padding-left: 20px;
@@ -72,7 +72,7 @@
     &__btn {
         font-size: 11px;
         font-family: "Tahoma";
-        color: #ffffff;
+        color: $primary-white-color;
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1.2;
@@ -80,12 +80,12 @@
         text-align: center;
         padding: 18px;
         border: none;
-        background-color: #ff6b08;
+        background-color: $secondory-accent-color;
         cursor: pointer;
     }
 
     &__btn:hover {
-        background-color: #d35526;
+        background-color: $secondory-accent-color;
     }
 }
 

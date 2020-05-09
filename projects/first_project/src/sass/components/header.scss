@@ -36,7 +36,7 @@
         margin-top: -1px;
         width: 26px;
         height: 2px;
-        background-color: #18191d;
+        background-color: $primary-dark-color;
     }
 
     &__burger::before,
@@ -78,10 +78,10 @@
         &__button {
             display: inline-block;
             background-color: transparent;
-            border: 2px solid #ff6b08;
+            border: 2px solid $first-accent-color;
             font-size: 11px;
             font-family: "Tahoma";
-            color: #ff6b08;
+            color: $first-accent-color;
             font-weight: bold;
             text-transform: uppercase;
             line-height: 1.2;
@@ -92,8 +92,8 @@
         }
 
         &__button:hover {
-            color: #d35526;
-            border: 2px solid #d35526;
+            color: $secondory-accent-color;
+            border: 2px solid $secondory-accent-color;
         }
     }
 }
@@ -131,7 +131,7 @@
         &__item {
             font-size: 14px;
             font-family: "Tahoma";
-            color: #b9b9b9;
+            color: $info-text-color;
             font-weight: bold;
             text-transform: uppercase;
             line-height: 1.2;
@@ -140,16 +140,16 @@
         }
 
         &__item:hover {
-            color: #ff6b08;
+            color: $first-accent-color;
         }
 
         &__button {
             display: inline-block;
             background-color: transparent;
-            border: 2px solid #ff6b08;
+            border: 2px solid $first-accent-color;
             font-size: 12px;
             font-family: "Tahoma";
-            color: #ff6b08;
+            color: $first-accent-color;
             font-weight: bold;
             text-transform: uppercase;
             line-height: 1.2;
@@ -163,8 +163,8 @@
         }
 
         &__button:hover {
-            color: #d35526;
-            border: 2px solid #d35526;
+            color: $secondory-accent-color;
+            border: 2px solid $secondory-accent-color;
         }
     }
 }
@@ -202,7 +202,7 @@
         &__item {
             font-size: 12px;
             font-family: "Tahoma";
-            color: #b9b9b9;
+            color: $info-text-color;
             font-weight: bold;
             text-transform: uppercase;
             line-height: 1.2;
@@ -211,16 +211,16 @@
         }
 
         &__item:hover {
-            color: #ff6b08;
+            color: $first-accent-color;
         }
 
         &__button {
             display: inline-block;
             background-color: transparent;
-            border: 2px solid #ff6b08;
+            border: 2px solid $first-accent-color;
             font-size: 14px;
             font-family: "Tahoma";
-            color: #ff6b08;
+            color: $first-accent-color;
             font-weight: bold;
             text-transform: uppercase;
             line-height: 1.2;
@@ -234,8 +234,8 @@
         }
 
         &__button:hover {
-            color: #d35526;
-            border: 2px solid #d35526;
+            color: $secondory-accent-color;
+            border: 2px solid $secondory-accent-color;
         }
     }
 }

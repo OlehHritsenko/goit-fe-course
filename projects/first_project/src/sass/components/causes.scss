@@ -7,15 +7,15 @@
         position: absolute;
         top: 0;
         z-index: -10;
-        background-color: #111517;
+        background-color: $background-color;
         width: 100%;
         height: 396px;
     }
 
     &__title {
         font-size: 20px;
-        font-family: "Montserrat";
-        color: #ffffff;
+        font-family: $main-font-stack;
+        color: $primary-white-color;
         font-weight: bold;
         line-height: 1.5;
         letter-spacing: 0.9px;
@@ -28,7 +28,7 @@
     &__list {
         counter-reset: count-item;
         list-style-type: none;
-        background-color: #ffffff;
+        background-color: $primary-white-color;
         box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
         padding: 25px;
         margin: 0;
@@ -36,8 +36,8 @@
 
     &__item {
         font-size: 13px;
-        font-family: "Montserrat";
-        color: #18191d;
+        font-family: $main-font-stack;
+        color: $primary-dark-color;
         font-weight: bold;
         line-height: 1.538;
         letter-spacing: 0.6px;
@@ -55,13 +55,13 @@
         counter-increment: count-item;
         margin-left: 35px;
         margin-bottom: 15px;
-        color: #ff6b08;
+        color: $first-accent-color;
     }
 
     &__item::after {
         content: "";
         display: block;
-        background-color: #ff6b08;
+        background-color: $first-accent-color;
         width: 25px;
         height: 2px;
         position: absolute;

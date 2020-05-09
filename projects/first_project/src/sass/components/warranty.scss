@@ -1,8 +1,8 @@
 .warranty {
     &__title {
         font-size: 20px;
-        font-family: "Montserrat";
-        color: #111517;
+        font-family: $main-font-stack;
+        color: $background-color;
         font-weight: bold;
         line-height: 1.6;
         text-align: center;
@@ -11,7 +11,7 @@
     }
 
     &__fon {
-        background-color: #f1f1f1;
+        background-color: $third-background-color;
     }
 
     &__list {
@@ -43,15 +43,15 @@
 
     &__text {
         font-size: 11px;
-        font-family: "Montserrat";
+        font-family: $main-font-stack;
         font-weight: 500;
-        color: #18191d;
+        color: $primary-dark-color;
         line-height: 1.818;
         margin: 0;
     }
 
     &__text span {
-        color: #ff6b08;
+        color: $first-accent-color;
     }
 }
 

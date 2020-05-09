@@ -16,8 +16,8 @@
 
     &__title {
         font-size: 20px;
-        font-family: "Montserrat";
-        color: #18191d;
+        font-family: $main-font-stack;
+        color: $primary-dark-color;
         font-weight: bold;
         line-height: 1.45;
         text-align: left;
@@ -28,8 +28,8 @@
 
     &__text1 {
         font-size: 15px;
-        font-family: "Montserrat";
-        color: #b9b9b9;
+        font-family: $main-font-stack;
+        color: $info-text-color;
         line-height: 1.355;
         margin: 0;
     }
@@ -37,8 +37,8 @@
     &__text2 {
         font-size: 15px;
         font-weight: bold;
-        font-family: "Montserrat";
-        color: #18191d;
+        font-family: $main-font-stack;
+        color: $primary-dark-color;
         line-height: 1.355;
         margin: 0;
     }
@@ -46,8 +46,8 @@
     &__text3 {
         font-size: 15px;
         font-weight: bold;
-        font-family: "Montserrat";
-        color: #ff6b08;
+        font-family: $main-font-stack;
+        color: $first-accent-color;
         line-height: 1.355;
         margin: 0;
         margin-bottom: 36px;
@@ -56,7 +56,7 @@
     &__btn {
         font-size: 11px;
         font-family: "Tahoma";
-        color: #ffffff;
+        color: $primary-white-color;
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1.2;
@@ -64,11 +64,11 @@
         text-align: center;
         padding: 18px;
         border: none;
-        background-color: #ff6b08;
+        background-color: $first-accent-color;
     }
 
     &__btn:hover {
-        background-color: #d35526;
+        background-color: $secondory-accent-color;
     }
 
     &__picture {
@@ -99,8 +99,8 @@
 
     &__text {
         font-size: 13px;
-        font-family: "Montserrat";
-        color: #18191d;
+        font-family: $main-font-stack;
+        color: $primary-dark-color;
         font-weight: bold;
         line-height: 1.538;
         width: min-content;
@@ -121,7 +121,7 @@
         content: ""; 
         width: 4px;
         height: 36px;
-        background-color: #ffffff;
+        background-color: $primary-white-color;
         top: 50%;
         right: -3px;
         transform: translateY(-50%);

@@ -11,8 +11,8 @@
 
     &__title {
         font-size: 20px;
-        font-family: "Montserrat";
-        color: rgb(255, 255, 255);
+        font-family: $main-font-stack;
+        color: $primary-white-color;
         font-weight: bold;
         line-height: 1.5;
         letter-spacing: 0.9px;
@@ -22,13 +22,13 @@
     }
 
     &__title-color {
-        color: #ff6b08;
+        color: $first-accent-color;
     }
 
     &__list {
         counter-reset: count-item;
         list-style-type: none;
-        background-color: #ffffff;
+        background-color: $primary-white-color;
         box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
         margin: 0;
         padding: 0;
@@ -39,8 +39,8 @@
 
     &__item {
         font-size: 13px;
-        font-family: "Montserrat";
-        color: #18191d;
+        font-family: $main-font-stack;
+        color: $primary-dark-color;
         font-weight: bold;
         line-height: 1.538;
         letter-spacing: 0.9px;
@@ -52,8 +52,8 @@
         content: counter(count-item, decimal-leading-zero) " "; 
         counter-increment: count-item;
         font-size: 14px;
-        font-family: "Montserrat";
-        color: rgb(255, 107, 8);
+        font-family: $main-font-stack;
+        color: $first-accent-color;
         line-height: 2.083;
         padding-left: 34px;
         padding-top: 10px;
@@ -63,7 +63,7 @@
     &__item::after {
         content: "";
         display: block;
-        background-color: #ff6b08;
+        background-color: $first-accent-color;
         width: 25px;
         height: 2px;
         position: absolute;

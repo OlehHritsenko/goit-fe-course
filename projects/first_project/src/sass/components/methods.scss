@@ -3,8 +3,8 @@
 
     &__title {
         font-size: 20px;
-        font-family: "Montserrat";
-        color: #18191d;
+        font-family: $main-font-stack;
+        color: $primary-dark-color;
         font-weight: bold;
         line-height: 1.65;
         text-align: center;
@@ -20,8 +20,8 @@
 
     &__card-title {
         font-size: 13px;
-        font-family: "Montserrat";
-        color: #111517;
+        font-family: $main-font-stack;
+        color: $background-color;
         font-weight: 700;
         line-height: 1.5;
         letter-spacing: 0.6px;
@@ -34,14 +34,14 @@
         display: block;
         width: 25px;
         height: 2px;
-        background-color: #ff6b08;
+        background-color: $first-accent-color;
         margin: 15px auto;
     }
 
     &__card-text {
         font-size: 11px;
-        font-family: "Montserrat";
-        color: #858585;
+        font-family: $main-font-stack;
+        color: $little-text-color;
         line-height: 1.8;
         letter-spacing: 0.7px;
         margin: 0;
@@ -60,21 +60,21 @@
 
 .methods__card:hover {
     box-shadow: none;
-    background-color: #ff6b08;
+    background-color: $first-accent-color;
     transition: all 0.2s linear;
 }
 
 .methods__card:hover .methods__card-title,
 .methods__card:hover .methods__card-text {
-    color: #ffffff;
+    color: $primary-white-color;
 }
 
 .methods__card:hover .methods__card-title::after {
-    background-color: #ffffff;
+    background-color: $primary-white-color;
 }
 
 .methods__card:hover .icon__svg path {
-    fill: #ffffff;
+    fill: $primary-white-color;
 }
 
 @media(min-width: 768px) and (max-width: 1279px) {
