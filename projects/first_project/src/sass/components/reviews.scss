@@ -24,6 +24,12 @@
         padding-left: 20px;
     }
 
+    &__img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__info {
         text-align: center;
     }
