@@ -9,6 +9,7 @@
 
     &__tel {
         display: flex;
+        justify-content: center;
         font-size: 18px;
         font-family: $main-font-stack;
         color: $background-color;
@@ -42,6 +43,10 @@
         padding: 0;
         margin: 0;
     }
+}
+
+.icon-tel {
+    margin-right: 6px;
 }
 
 .instagram {
