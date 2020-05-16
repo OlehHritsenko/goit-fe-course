@@ -61,7 +61,6 @@
         text-transform: uppercase;
         line-height: 1.2;
         letter-spacing: 0.9px;
-        text-align: center;
         padding: 18px;
         border: none;
         background-color: $first-accent-color;
@@ -135,6 +134,13 @@
     top: 10px;
     width: 30px;
     height: 36px;
+}
+
+@media(max-width: 767px) {
+    .main__btn {
+        display: flex;
+        margin: 0 auto;
+    }
 }
 
 @media(min-width: 768px) and (max-width: 1279px) {
